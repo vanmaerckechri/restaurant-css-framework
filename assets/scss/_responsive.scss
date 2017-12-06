@@ -1,6 +1,23 @@
 @import "variables";
 
 /* RESPONSIVE */
-@media (max-width: XxXpx)
+@media (max-width: 767px)
 {
+	.navbar-inverse
+	{
+		ul.navbar-nav
+		{
+			li
+			{
+				text-align: center;
+				background-color: rgba(0, 0, 0, .5);
+				border-bottom: 1px solid white;
+				a
+				{
+					color: white;
+				}
+			}
+		}
+
+	}
 }

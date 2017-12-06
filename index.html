@@ -2,25 +2,49 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Présentation de l'Auteur du Site</title>
+    <title>Du Gras Plein la Panse - Calendrier</title>
     <link href="assets/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/stylescss.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 </head>
-<body id="accueil">
+<body>
     <header>
-    	<p id="logo">Du Gras Plein la Panse - News</p>
-	    <nav  tabindex="0">
-	    	<ul>
-	    		<li><a href="index.html"><span id="pageActuelle">°</span>Accueil<span id="pageActuelle">°</span></a></li>
-	    		<li><a href="carte.html">Carte</a></li>
-	    		<li><a href="photos.html">Photos</a></li>
-	    		<li><a href="restaurants.html">Restaurants</a></li>
-	    		<li><a href="contact.html">Contact</a></li>
-	    	</ul>
-	    </nav>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Du Gras Plein la Panse</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html"><span id="pageActuelle">°</span>Accueil<span id="pageActuelle">°</span></a></li>
+                        <li><a href="carte.html">Carte</a></li>
+                        <li><a href="photos.html">Photos</a></li>
+                        <li><a href="restaurants.html">Restaurants</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
-    <div id="main">
-    	<h1></h1>
+    <main id="main" class="container-fluid">
+        <h1 id="etablissement" class="jumbotron">Du Gras Plein la Panse,<br>un Restaurant qui Marie Elégance et Raffinement</h1>
+        <section id="parallaxBox1" class="panel panel-default">
+            <h2 class="panel-heading">Nouveautés</h2>
+            <p class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis maxime repudiandae libero non placeat? Accusantium voluptates quod mollitia sed repellat molestias, explicabo deleniti doloremque alias blanditiis voluptas beatae in qui!</p>
+        </section>
+        <section id="concert"></section>
+        <section id="parallaxBox2" class="panel panel-default">
+            <h2 class="panel-heading">Concerts à venir</h2>
+            <p class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis maxime repudiandae libero non placeat? Accusantium voluptates quod mollitia sed repellat molestias, explicabo deleniti doloremque alias blanditiis voluptas beatae in qui!</p>
+        </section>
 	</div>
     <footer>
     </footer>

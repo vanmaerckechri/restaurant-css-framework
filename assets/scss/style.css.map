@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,8BAA8B;AAC9B,oeACA;EACC,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;EACT,UAAU,EAAE,UAAU;EACtB,SAAS,EAAE,IAAI;EACf,IAAI,EAAE,OAAO;EACb,cAAc,EAAE,QAAQ;EACxB,WAAW,EAAE,MAAM;;ACRpB,gBAAgB;ACAhB,aAAa;ACAb,gBAAgB",
+"sources": ["_reset.scss","_animations.scss","_base.scss","_responsive.scss"],
+"names": [],
+"file": "style.css"
+}
