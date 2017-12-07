@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-inverse navbar-fixed-top">
+        <nav class="navbar navbar-inverse navbar-fixed-top"> <!-- navbar-defaut = couleurs foncées, navbar-inverse = couleurs claires -->
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -24,7 +24,7 @@
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="index.html"><span id="pageActuelle">°</span>Accueil<span id="pageActuelle">°</span></a></li>
+                        <li class="active"><a href="index.html">Accueil</a></li>
                         <li><a href="carte.html">Carte</a></li>
                         <li><a href="photos.html">Photos</a></li>
                         <li><a href="restaurants.html">Restaurants</a></li>
@@ -34,17 +34,26 @@
             </div>
         </nav>
     </header>
-    <main id="main" class="container-fluid">
-        <h1 id="etablissement" class="jumbotron">Du Gras Plein la Panse,<br>un Restaurant qui Marie Elégance et Raffinement</h1>
-        <section id="parallaxBox1" class="panel panel-default">
-            <h2 class="panel-heading">Nouveautés</h2>
-            <p class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis maxime repudiandae libero non placeat? Accusantium voluptates quod mollitia sed repellat molestias, explicabo deleniti doloremque alias blanditiis voluptas beatae in qui!</p>
+    <div id="main">
+        <section class="jumbotron container-fluid">
+            <h1 class="container">Du Gras Plein la Panse,</h1>
+            <p class="container">un Restaurant qui Marie Elégance et Raffinement.</p>
         </section>
-        <section id="concert"></section>
-        <section id="parallaxBox2" class="panel panel-default">
-            <h2 class="panel-heading">Concerts à venir</h2>
-            <p class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis maxime repudiandae libero non placeat? Accusantium voluptates quod mollitia sed repellat molestias, explicabo deleniti doloremque alias blanditiis voluptas beatae in qui!</p>
+        <section class="panel panel-info"><!-- Thèmes = .panel-default , .panel-primary , .panel-success , .panel-info , .panel-warning d' .panel-danger .panel-warning , ou .panel-danger -->
+            <div class="panel-heading container-fluid">
+                <h2 class="container">Nouveautés</h2>
+            </div>
+            <p class="panel-body container">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis maxime repudiandae libero non placeat? Accusantium voluptates quod mollitia sed repellat molestias, explicabo deleniti doloremque alias blanditiis voluptas beatae in qui!</p>
         </section>
+        <section class="panel panel-info">
+            <div class="panel-heading container-fluid">
+                <h2 class="container">Concerts à Venir</h2>
+            </div>
+            <div class="panel-body container">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione pariatur, enim, tempora explicabo doloremque atque tenetur distinctio, reprehenderit voluptatum, consequuntur nemo! Nulla dolores exercitationem cum consequatur. Optio, necessitatibus aliquid inventore.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, accusantium repellat, culpa quas, consectetur totam ipsa dolore labore aspernatur dicta commodi incidunt. Temporibus obcaecati nobis ea aut rerum quidem officiis.</p>
+                <p>Optio, necessitatibus aliquid inventore.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, accusantium repellat, culpa quas, consectetur totam ipsa dolore labore aspernatur dicta commodi incidunt. Temporibus obcaecati nobis ea aut rerum quidem officiis.</p>
+        </section>
+        <div id="concert"></div>
 	</div>
     <footer>
     </footer>

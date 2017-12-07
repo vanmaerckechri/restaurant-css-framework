@@ -2,26 +2,107 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Présentation de l'Auteur du Site</title>
+    <title>Du Gras Plein la Panse - La Carte</title>
     <link href="assets/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/stylescss.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 </head>
-<body id="accueil">
+<body>
     <header>
-    	<p id="logo">Du Gras Plein la Panse - Carte</p>
-	    <nav  tabindex="0">
-	    	<ul>
-	    		<li><a href="index.html">Accueil</a></li>
-	    		<li><a href="carte.html"><span id="pageActuelle">°</span>Carte<span id="pageActuelle">°</span></a></li>
-	    		<li><a href="photos.html">Photos</a></li>
-	    		<li><a href="restaurants.html">Restaurants</a></li>
-	    		<li><a href="contact.html">Contact</a></li>
-	    	</ul>
-	    </nav>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Du Gras Plein la Panse</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li class="active"><a href="carte.html">Carte</a></li>
+                        <li><a href="photos.html">Photos</a></li>
+                        <li><a href="restaurants.html">Restaurants</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
-    <div id="main">
-    	<h1></h1>
-	</div>
+    <div id="main" class="container">
+        <h1 class="container">Carte</h1>
+        <div class="panel panel-info">
+            <div class="panel-heading">Les Burgers</div>
+            <div class="panel-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis voluptatum, quasi obcaecati, ullam nulla error.</p>
+            </div>
+            <table class="table table-striped">
+                <thead> 
+                    <tr> 
+                        <td>Nom</td> 
+                        <td>Composition</td>
+                        <td>Prix</td> 
+                    </tr> 
+                </thead> 
+                <tbody> 
+                    <tr> 
+                        <td>Le Classique</td> 
+                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing.</td>
+                        <td>17€</td> 
+                    </tr> 
+                    <tr> 
+                        <td>Le Double</td> 
+                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing.</td>
+                        <td>25€</td> 
+                    </tr> 
+                    <tr> 
+                        <td>Le Triple</td> 
+                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing.</td>
+                        <td>30€</td> 
+                    </tr> 
+                    <tr> 
+                        <td>L'Atomique</td> 
+                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing.</td>
+                        <td>35€</td> 
+                    </tr>
+                </tbody> 
+            </table>
+            <div class="panel-heading">Les Boissons</div>
+            <div class="panel-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis voluptatum, quasi obcaecati, ullam nulla error.</p>
+            </div>
+            <table class="table table-striped">
+                <thead> 
+                    <tr> 
+                        <td>Nom</td> 
+                        <td>Prix</td> 
+                    </tr> 
+                </thead> 
+                <tbody> 
+                    <tr> 
+                        <td>eau</td> 
+                        <td>3€</td> 
+                    </tr> 
+                    <tr> 
+                        <td>softs: coca, orangina, fanta, sprite...</td> 
+                        <td>4€</td> 
+                    </tr> 
+                    <tr> 
+                        <td>café, thé</td> 
+                        <td>3.5€</td> 
+                    </tr> 
+                    <tr> 
+                        <td>Jus de Fruit</td> 
+                        <td>7€</td> 
+                    </tr>
+                </tbody> 
+            </table>
+        </div>
     <footer>
     </footer>
 </body>
