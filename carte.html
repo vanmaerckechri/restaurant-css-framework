@@ -34,44 +34,54 @@
             </div>
         </nav>
     </header>
-    <div id="main" class="container">
+    <div id="main" class="container-fluid">
         <h1 class="container">Carte</h1>
-        <div class="panel panel-info">
-            <div class="panel-heading">Les Burgers</div>
+        <div class="panel panel-warning container">
+            <div class="panel-heading carteTitre">Les Burgers</div>
             <div class="panel-body">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis voluptatum, quasi obcaecati, ullam nulla error.</p>
             </div>
-            <table class="table table-striped">
+            <table class="table">
                 <thead> 
-                    <tr> 
-                        <td>Nom</td> 
-                        <td>Composition</td>
-                        <td>Prix</td> 
+                    <tr>                         
+                        <td colspan="3">Le Classique</td> 
                     </tr> 
                 </thead> 
                 <tbody> 
                     <tr> 
-                        <td>Le Classique</td> 
-                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing.</td>
-                        <td>17€</td> 
+                        <td class="tableImg"><img src="assets/images/burger01.jpg" alt="photo de l'hamburger classique"/></td> 
+                        <td>Lorem, ipsum dolor, sit amet, consectetur adipisicing, lorem, ipsum dolor, sit amet, consectetur adipisicing.</td>
+                        <td class="prix">17€</td> 
                     </tr> 
-                    <tr> 
-                        <td>Le Double</td> 
-                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing.</td>
-                        <td>25€</td> 
+                </tbody>
+                <thead class="sriped"> 
+                    <tr>                         
+                        <td colspan="3" style="text-align: right;">Le Double</td> 
                     </tr> 
+                </thead> 
+                <tbody class="sriped"> 
                     <tr> 
-                        <td>Le Triple</td> 
-                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing.</td>
-                        <td>30€</td> 
+                        <td class="prix">25€</td> 
+                        <td>Lorem, ipsum dolor, sit amet, consectetur adipisicing, lorem, ipsum dolor, sit amet, consectetur adipisicing.</td>
+                        <td class="tableImg"><img src="assets/images/burger02.jpg" alt="photo de l'hamburger avec deux tranches de viande"/></td> 
                     </tr> 
+                </tbody> 
+                <thead> 
+                    <tr>                         
+                        <td colspan="3">Le Double Bacon</td> 
+                    </tr> 
+                </thead> 
+                <tbody> 
                     <tr> 
-                        <td>L'Atomique</td> 
-                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing.</td>
-                        <td>35€</td> 
-                    </tr>
+                        <td class="tableImg"><img src="assets/images/burger03.jpg" alt="photo de l'hamburger avec deux tranches de viande"/></td> 
+                        <td>Lorem, ipsum dolor, sit amet, consectetur adipisicing, lorem, ipsum dolor, sit amet, consectetur adipisicing.</td>
+                        <td class="prix">30€</td> 
+                    </tr> 
                 </tbody> 
             </table>
+        </div>
+    </div>
+   <!--<div class="panel panel-info">
             <div class="panel-heading">Les Boissons</div>
             <div class="panel-body">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis voluptatum, quasi obcaecati, ullam nulla error.</p>
@@ -80,29 +90,30 @@
                 <thead> 
                     <tr> 
                         <td>Nom</td> 
-                        <td>Prix</td> 
+                        <td class="prix">Prix</td> 
                     </tr> 
                 </thead> 
                 <tbody> 
                     <tr> 
                         <td>eau</td> 
-                        <td>3€</td> 
+                        <td class="prix">3€</td> 
                     </tr> 
                     <tr> 
                         <td>softs: coca, orangina, fanta, sprite...</td> 
-                        <td>4€</td> 
+                        <td class="prix">4€</td> 
                     </tr> 
                     <tr> 
                         <td>café, thé</td> 
-                        <td>3.5€</td> 
+                        <td class="prix">3.5€</td> 
                     </tr> 
                     <tr> 
                         <td>Jus de Fruit</td> 
-                        <td>7€</td> 
+                        <td class="prix">7€</td> 
                     </tr>
                 </tbody> 
             </table>
         </div>
+    </div>-->
     <footer>
     </footer>
 </body>

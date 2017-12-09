@@ -1,12 +1,12 @@
 @import "variables";
 
+/* COMMUN */
 .navbar-toggle .icon-bar
 {
 	border-radius: 1px;
 	display: block;
 	height: 2px; width: 22px;
 }
-
 #main
 {
 	section.jumbotron
@@ -21,6 +21,8 @@
 			@extend .textCouleurEtOmbres;
 		}
 	}
+
+/* ACCUEIL */
 	section#nouveautes
 	{
 		position: absolute;
@@ -62,4 +64,68 @@
 		background: url("../images/concert.jpg");
 		min-height: 100vh;	
 	}
+}
+
+/* CARTE */
+
+thead
+{
+	tr
+	{
+		width: 100%;
+		td
+		{
+			font-weight: 600;
+		}
+	}
+}
+
+tbody
+{
+	tr
+	{
+		border-bottom: 1px solid rgba(10, 10, 150, .2);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		td
+		{
+			border-top: none!important;
+			text-align: center;
+		}
+		td.tableImg
+		{
+			min-width: 150px;
+			max-width: 250px;
+			img
+			{
+				border-radius: 10px;
+				border: 1px solid black;
+				width: 100%;
+				height: auto;
+				transition: all .5s;
+				opacity: .8;
+			}
+			:hover
+			{
+				transform: scale(1.2);
+				opacity: 1;
+			}
+		}
+		td.prix
+		{
+			width: 10%;
+		}
+	}
+}
+
+.carteTitre
+{
+	font-weight: 600;
+	font-size: 1.5em;
+}
+
+.sriped
+{
+	background-color: rgba(138, 109, 59, .2);	
 }

@@ -38,39 +38,79 @@ nav {
   color: white;
   text-shadow: 1px 1px 1px #000014; }
 
+/* COMMUN */
 .navbar-toggle .icon-bar {
   border-radius: 1px;
   display: block;
   height: 2px;
   width: 22px; }
 
-#main section.jumbotron {
-  margin-bottom: 0;
-  background: url("../images/etablissement.jpg");
-  min-height: calc(100vh - 50px);
-  text-align: right; }
-#main section#nouveautes {
-  position: absolute;
-  top: calc(100vh - 300px);
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.7); }
-#main section#concert {
-  background-color: black; }
-#main section#nouveautes, #main section#concert {
-  margin-bottom: 0;
-  border: 1px solid black;
-  border-radius: 0;
-  min-height: 250px;
-  width: 100%;
-  box-shadow: 1px 1px 5px #0a0028; }
-  #main section#nouveautes .panel-heading, #main section#concert .panel-heading {
-    border: none; }
-  #main section#nouveautes .panel-body p, #main section#concert .panel-body p {
-    color: white;
-    line-height: 2em; }
-#main #concertImg {
-  background: url("../images/concert.jpg");
-  min-height: 100vh; }
+#main {
+  /* ACCUEIL */ }
+  #main section.jumbotron {
+    margin-bottom: 0;
+    background: url("../images/etablissement.jpg");
+    min-height: calc(100vh - 50px);
+    text-align: right; }
+  #main section#nouveautes {
+    position: absolute;
+    top: calc(100vh - 300px);
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7); }
+  #main section#concert {
+    background-color: black; }
+  #main section#nouveautes, #main section#concert {
+    margin-bottom: 0;
+    border: 1px solid black;
+    border-radius: 0;
+    min-height: 250px;
+    width: 100%;
+    box-shadow: 1px 1px 5px #0a0028; }
+    #main section#nouveautes .panel-heading, #main section#concert .panel-heading {
+      border: none; }
+    #main section#nouveautes .panel-body p, #main section#concert .panel-body p {
+      color: white;
+      line-height: 2em; }
+  #main #concertImg {
+    background: url("../images/concert.jpg");
+    min-height: 100vh; }
+
+/* CARTE */
+thead tr {
+  width: 100%; }
+  thead tr td {
+    font-weight: 600; }
+
+tbody tr {
+  border-bottom: 1px solid rgba(10, 10, 150, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  tbody tr td {
+    border-top: none !important;
+    text-align: center; }
+  tbody tr td.tableImg {
+    min-width: 150px;
+    max-width: 250px; }
+    tbody tr td.tableImg img {
+      border-radius: 10px;
+      border: 1px solid black;
+      width: 100%;
+      height: auto;
+      transition: all .5s;
+      opacity: .8; }
+    tbody tr td.tableImg :hover {
+      transform: scale(1.2);
+      opacity: 1; }
+  tbody tr td.prix {
+    width: 10%; }
+
+.carteTitre {
+  font-weight: 600;
+  font-size: 1.5em; }
+
+.sriped {
+  background-color: rgba(138, 109, 59, 0.2); }
 
 /* variables */
 /* extend */
