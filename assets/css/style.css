@@ -21,12 +21,19 @@
   text-shadow: 1px 1px 1px #000014; }
 
 /* BALISES */
+body {
+  background-color: black; }
+
 nav {
   height: 50px; }
 
 #main {
   position: relative;
   margin-top: 50px; }
+
+h1 {
+  color: white;
+  margin: 1em 0; }
 
 /* variables */
 /* extend */
@@ -76,41 +83,73 @@ nav {
     min-height: 100vh; }
 
 /* CARTE */
-thead tr {
+table thead tr {
   width: 100%; }
-  thead tr td {
+  table thead tr td {
+    font-size: 1.5em;
     font-weight: 600; }
-
-tbody tr {
+table tbody tr {
   border-bottom: 1px solid rgba(10, 10, 150, 0.2);
   display: flex;
   justify-content: space-between;
   align-items: center; }
-  tbody tr td {
+  table tbody tr td {
     border-top: none !important;
+    margin: auto 8px;
     text-align: center; }
-  tbody tr td.tableImg {
+  table tbody tr td.tableImg {
     min-width: 150px;
     max-width: 250px; }
-    tbody tr td.tableImg img {
+    table tbody tr td.tableImg img {
       border-radius: 10px;
       border: 1px solid black;
       width: 100%;
       height: auto;
       transition: all .5s;
       opacity: .8; }
-    tbody tr td.tableImg :hover {
+    table tbody tr td.tableImg :hover {
+      border: none;
       transform: scale(1.2);
-      opacity: 1; }
-  tbody tr td.prix {
-    width: 10%; }
+      opacity: 1;
+      box-shadow: 2px 2px 6px rgba(0, 0, 20, 0.7); }
+  table tbody tr td.prix {
+    width: 10%;
+    font-size: 1.5em; }
 
 .carteTitre {
   font-weight: 600;
   font-size: 1.5em; }
 
-.sriped {
-  background-color: rgba(138, 109, 59, 0.2); }
+.carte {
+  opacity: .9; }
+
+.striped {
+  background-image: linear-gradient(to right, rgba(138, 109, 59, 0), rgba(138, 109, 59, 0.6)); }
+
+/* PHOTOGRAPHIES */
+#main.photos {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 90vh; }
+  #main.photos h1 {
+    margin: 0; }
+  #main.photos #galerie div a img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    opacity: .8;
+    transition: all 1s; }
+    #main.photos #galerie div a img:hover {
+      border: 1px solid black;
+      transform: scale(1.2);
+      border-radius: 10px;
+      opacity: 1;
+      z-index: 10; }
+
+body nav {
+  text-align: center; }
 
 /* variables */
 /* extend */

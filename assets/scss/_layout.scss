@@ -68,53 +68,61 @@
 
 /* CARTE */
 
-thead
+table
 {
-	tr
+	thead
 	{
-		width: 100%;
-		td
+		tr
 		{
-			font-weight: 600;
+			width: 100%;
+			td
+			{
+				font-size: 1.5em;
+				font-weight: 600;
+			}
 		}
 	}
-}
 
-tbody
-{
-	tr
+	tbody
 	{
-		border-bottom: 1px solid rgba(10, 10, 150, .2);
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		td
+		tr
 		{
-			border-top: none!important;
-			text-align: center;
-		}
-		td.tableImg
-		{
-			min-width: 150px;
-			max-width: 250px;
-			img
+			border-bottom: 1px solid rgba(10, 10, 150, .2);
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			td
 			{
-				border-radius: 10px;
-				border: 1px solid black;
-				width: 100%;
-				height: auto;
-				transition: all .5s;
-				opacity: .8;
+				border-top: none!important;
+				margin: auto 8px;
+				text-align: center;
 			}
-			:hover
+			td.tableImg
 			{
-				transform: scale(1.2);
-				opacity: 1;
+				min-width: 150px;
+				max-width: 250px;
+				img
+				{
+					border-radius: 10px;
+					border: 1px solid black;
+					width: 100%;
+					height: auto;
+					transition: all .5s;
+					opacity: .8;
+				}
+				:hover
+				{
+					border: none;
+					transform: scale(1.2);
+					opacity: 1;
+					box-shadow: 2px 2px 6px rgba(0, 0, 20, .7)
+				}
 			}
-		}
-		td.prix
-		{
-			width: 10%;
+			td.prix
+			{
+				width: 10%;
+				font-size: 1.5em;
+			}
 		}
 	}
 }
@@ -125,7 +133,57 @@ tbody
 	font-size: 1.5em;
 }
 
-.sriped
+.carte
 {
-	background-color: rgba(138, 109, 59, .2);	
+	opacity: .9;
+}
+.striped
+{
+	background-image: linear-gradient(to right, rgba(138, 109, 59, 0), rgba(138, 109, 59, .6));	
+}
+
+/* PHOTOGRAPHIES */
+#main.photos
+{
+	margin-top: 60px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 90vh;
+	h1
+	{
+		margin: 0;
+	}
+	#galerie
+	{
+		div
+		{
+			a
+			{
+				img
+				{
+					width: 100%;
+					height: 50vh;
+					object-fit: cover;
+					opacity: .8;
+					transition: all 1s;
+					&:hover
+					{
+						border: 1px solid black;
+						transform: scale(1.2);
+						border-radius: 10px;
+						opacity: 1;
+						z-index: 10;
+					}
+				}
+			}
+		}
+	}
+}
+body
+{
+	nav
+	{
+		text-align: center;
+	}
 }
