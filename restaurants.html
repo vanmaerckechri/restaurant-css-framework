@@ -2,25 +2,62 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Présentation de l'Auteur du Site</title>
+    <title>Du Gras Plein la Panse - Restaurants</title>
     <link href="assets/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/stylescss.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 </head>
-<body id="accueil">
+<body>
     <header>
-    	<p id="logo">Du Gras Plein la Panse - Restaurants</p>
-	    <nav  tabindex="0">
-	    	<ul>
-	    		<li><a href="index.html">Accueil</a></li>
-	    		<li><a href="carte.html">Carte</a></li>
-	    		<li><a href="photos.html">Photos</a></li>
-	    		<li><a href="restaurants.html"><span id="pageActuelle">°</span>Restaurants<span id="pageActuelle">°</span></a></li>
-	    		<li><a href="contact.html">Contact</a></li>
-	    	</ul>
-	    </nav>
+        <nav class="navbar navbar-inverse navbar-fixed-top"> <!-- navbar-defaut = couleurs foncées, navbar-inverse = couleurs claires -->
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">DGPP</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="carte.html">Carte</a></li>
+                        <li><a href="photos1.html">Photos</a></li>
+                        <li class="active"><a href="restaurants.html">Restaurants</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
-    <div id="main">
-    	<h1></h1>
+    <div id="main" class="container restaurants">
+        <h1 class="container">Nos Restaurants</h1>
+        <div class="row restauCoord">
+            <div class="col-sm-12 col-md-6 coordonnees">
+                <h2>Restaurant sur Bruxelles</h2>
+                <p>Cantersteen 10, 1000 Bruxelles</p>
+                <p>+32 222 222 222</p>
+                <img src="assets/images/restaurant1.jpg" alt="Photo de la facade du restaurant"/>
+            </div>
+            <div class="col-sm-12 col-md-6 googleMap">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2519.2337820363637!2d4.355096316045481!3d50.84535497953182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c47fd1d960c1%3A0xcbd18b1ea8412062!2sBeCode!5e0!3m2!1sfr!2sbe!4v1512842177043" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="row restauCoord">
+            <div class="col-sm-12 col-md-6 googleMap">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2526.9743636641642!2d4.591847516041173!3d50.701860279510825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c17d8aec109b59%3A0xec0b5286181703eb!2sWalibi+Belgium!5e0!3m2!1sfr!2sbe!4v1512848534097" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div class="col-sm-12 col-md-6 coordonnees">
+                <h2>Restaurant sur Bruxelles</h2>
+                <p>Cantersteen 10, 1000 Bruxelles</p>
+                <p>+32 222 222 222</p>
+                <img src="assets/images/restaurant2.jpg" alt="Photo de la facade du restaurant"/>
+            </div>
+        </div>
 	</div>
     <footer>
     </footer>
