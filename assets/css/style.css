@@ -7,7 +7,7 @@
 
 .textCouleurEtOmbres, #main section.jumbotron h1, #main section.jumbotron p {
   color: white;
-  text-shadow: 1px 1px 2px rgba(0, 0, 20, 0.5); }
+  text-shadow: 1px 1px 1px #000014; }
 
 /* ANIMATIONS */
 /* variables */
@@ -18,7 +18,7 @@
 
 .textCouleurEtOmbres, #main section.jumbotron h1, #main section.jumbotron p {
   color: white;
-  text-shadow: 1px 1px 2px rgba(0, 0, 20, 0.5); }
+  text-shadow: 1px 1px 1px #000014; }
 
 /* BALISES */
 nav {
@@ -36,7 +36,7 @@ nav {
 
 .textCouleurEtOmbres, #main section.jumbotron h1, #main section.jumbotron p {
   color: white;
-  text-shadow: 1px 1px 2px rgba(0, 0, 20, 0.5); }
+  text-shadow: 1px 1px 1px #000014; }
 
 .navbar-toggle .icon-bar {
   border-radius: 1px;
@@ -44,23 +44,33 @@ nav {
   height: 2px;
   width: 22px; }
 
-#main {
-  /*section.panel
-  {
-  	min-height: calc(50vh - 50px);
-  }*/ }
-  #main section.jumbotron {
-    background: url("../images/etablissement.jpg");
-    min-height: calc(100vh - 50px); }
-  #main section#nouveautes {
-    position: absolute;
-    top: calc(100vh - 300px);
-    left: 0;
-    min-height: 250px;
-    width: 100%; }
-  #main #concertImg {
-    background: url("../images/concert.jpg");
-    min-height: 100vh; }
+#main section.jumbotron {
+  margin-bottom: 0;
+  background: url("../images/etablissement.jpg");
+  min-height: calc(100vh - 50px);
+  text-align: right; }
+#main section#nouveautes {
+  position: absolute;
+  top: calc(100vh - 300px);
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7); }
+#main section#concert {
+  background-color: black; }
+#main section#nouveautes, #main section#concert {
+  margin-bottom: 0;
+  border: 1px solid black;
+  border-radius: 0;
+  min-height: 250px;
+  width: 100%;
+  box-shadow: 1px 1px 5px #0a0028; }
+  #main section#nouveautes .panel-heading, #main section#concert .panel-heading {
+    border: none; }
+  #main section#nouveautes .panel-body p, #main section#concert .panel-body p {
+    color: white;
+    line-height: 2em; }
+#main #concertImg {
+  background: url("../images/concert.jpg");
+  min-height: 100vh; }
 
 /* variables */
 /* extend */
@@ -70,7 +80,7 @@ nav {
 
 .textCouleurEtOmbres, #main section.jumbotron h1, #main section.jumbotron p {
   color: white;
-  text-shadow: 1px 1px 2px rgba(0, 0, 20, 0.5); }
+  text-shadow: 1px 1px 1px #000014; }
 
 /* RESPONSIVE */
 @media (max-width: 767px) {

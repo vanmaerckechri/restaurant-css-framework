@@ -12,24 +12,49 @@
 	section.jumbotron
 	{
 		@extend .etablissementBg;
+		margin-bottom: 0;
 		background: url("../images/etablissement.jpg");
-		min-height: calc(100vh - 50px); 
+		min-height: calc(100vh - 50px);
+		text-align: right;
 		h1, p
 		{
 			@extend .textCouleurEtOmbres;
 		}
 	}
-	/*section.panel
-	{
-		min-height: calc(50vh - 50px);
-	}*/
 	section#nouveautes
 	{
 		position: absolute;
 		top: calc(100vh - 300px);
 		left: 0;
+		background-color: rgba(0, 0, 0, .7);
+	}
+	section#concert
+	{
+		background-color: rgba(0, 0, 0, 1);
+	}
+	section#nouveautes, section#concert
+	{
+		margin-bottom: 0;
+		border: 1px solid black;
+		border-radius: 0;
 		min-height: 250px;
 		width: 100%;
+		box-shadow: 1px 1px 5px rgba(10, 0, 40, 1);
+		.panel-heading
+		{
+			border: none;
+			h2
+			{
+			}
+		}
+		.panel-body
+		{
+			p
+			{
+				color: white;
+				line-height: 2em;
+			}
+		}
 	}
 	#concertImg
 	{
