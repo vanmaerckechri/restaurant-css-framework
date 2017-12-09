@@ -15,9 +15,24 @@
 				a
 				{
 					color: white;
+				&:hover
+					{
+						background-color: white;
+						color: black;
+					}
 				}
 			}
 		}
-
+	}
+	body
+	{
+		#main.photos
+		{
+			display: block;
+			h1
+			{
+				margin: .5em auto;
+			}
+		}
 	}
 }

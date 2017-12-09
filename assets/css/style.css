@@ -186,6 +186,14 @@ body .restaurants .restauCoord {
     background-color: rgba(0, 0, 0, 0.5);
     border-bottom: 1px solid white; }
     .navbar-inverse ul.navbar-nav li a {
-      color: white; } }
+      color: white; }
+      .navbar-inverse ul.navbar-nav li a:hover {
+        background-color: white;
+        color: black; }
+
+  body #main.photos {
+    display: block; }
+    body #main.photos h1 {
+      margin: .5em auto; } }
 
 /*# sourceMappingURL=style.css.map */
