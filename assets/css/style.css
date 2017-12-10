@@ -5,7 +5,7 @@
   background-size: cover;
   background-attachment: fixed; }
 
-.textCouleurEtOmbres, #main section.jumbotron h1, #main section.jumbotron p {
+.textCouleurEtOmbres, #main section.jumbotron h1, #main section.jumbotron p, body .restaurants .resto .resto1, body .restaurants .resto .resto2 {
   color: white;
   text-shadow: 1px 1px 1px #000014; }
 
@@ -16,7 +16,7 @@
   background-size: cover;
   background-attachment: fixed; }
 
-.textCouleurEtOmbres, #main section.jumbotron h1, #main section.jumbotron p {
+.textCouleurEtOmbres, #main section.jumbotron h1, #main section.jumbotron p, body .restaurants .resto .resto1, body .restaurants .resto .resto2 {
   color: white;
   text-shadow: 1px 1px 1px #000014; }
 
@@ -41,7 +41,7 @@ h1 {
   background-size: cover;
   background-attachment: fixed; }
 
-.textCouleurEtOmbres, #main section.jumbotron h1, #main section.jumbotron p {
+.textCouleurEtOmbres, #main section.jumbotron h1, #main section.jumbotron p, body .restaurants .resto .resto1, body .restaurants .resto .resto2 {
   color: white;
   text-shadow: 1px 1px 1px #000014; }
 
@@ -155,19 +155,23 @@ body nav {
 body .restaurants h1 {
   margin-top: 50px;
   background-color: black; }
-body .restaurants .restauCoord {
-  margin-bottom: 1em;
-  height: 500px;
-  width: 100%;
-  background-color: white; }
-  body .restaurants .restauCoord .coordonnees {
-    height: 100%; }
-    body .restaurants .restauCoord .coordonnees img {
-      max-width: 100%;
-      object-fit: cover; }
-  body .restaurants .restauCoord .googleMap {
-    height: 100%;
-    background-color: white; }
+body .restaurants .resto {
+  border: 2px solid white;
+  margin-bottom: 1em; }
+  body .restaurants .resto .resto1, body .restaurants .resto .resto2 {
+    height: 422px; }
+  body .restaurants .resto .resto1 {
+    background: url("../images/restaurant1.jpg") no-repeat;
+    background-size: cover; }
+  body .restaurants .resto .resto2 {
+    background: url("../images/restaurant2.jpg") no-repeat;
+    background-size: cover; }
+  body .restaurants .resto .googleMap {
+    padding: 0;
+    height: 422px; }
+    body .restaurants .resto .googleMap iframe {
+      width: 100%;
+      height: 100%; }
 
 /* CONTACT */
 form label {
@@ -182,7 +186,7 @@ form textarea {
   background-size: cover;
   background-attachment: fixed; }
 
-.textCouleurEtOmbres, #main section.jumbotron h1, #main section.jumbotron p {
+.textCouleurEtOmbres, #main section.jumbotron h1, #main section.jumbotron p, body .restaurants .resto .resto1, body .restaurants .resto .resto2 {
   color: white;
   text-shadow: 1px 1px 1px #000014; }
 
