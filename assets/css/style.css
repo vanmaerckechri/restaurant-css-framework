@@ -174,11 +174,15 @@ body .restaurants .resto {
       height: 100%; }
 
 /* CONTACT */
-form label {
-  margin-top: 1em;
-  color: white; }
-form textarea {
-  max-width: 100%; }
+#main.contact {
+  min-height: calc(100vh - 50px);
+  display: flex;
+  align-items: center; }
+  #main.contact form label {
+    margin-top: 1em;
+    color: white; }
+  #main.contact form textarea {
+    max-width: 100%; }
 
 /* variables */
 /* extend */
