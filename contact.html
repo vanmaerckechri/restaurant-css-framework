@@ -2,25 +2,58 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Présentation de l'Auteur du Site</title>
+    <title>Du Gras Plein la Panse - Contact</title>
     <link href="assets/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/stylescss.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 </head>
-<body id="accueil">
+<body>
     <header>
-    	<p id="logo">Du Gras Plein la Panse - Contact</p>
-	    <nav  tabindex="0">
-	    	<ul>
-	    		<li><a href="index.html">Accueil</a></li>
-	    		<li><a href="carte.html">Carte</a></li>
-	    		<li><a href="photos.html">Photos</a></li>
-	    		<li><a href="restaurants.html">Restaurants</a></li>
-	    		<li><a href="contact.html"><span id="pageActuelle">°</span>Contact<span id="pageActuelle">°</span></a></li>
-	    	</ul>
-	    </nav>
+        <nav class="navbar navbar-inverse navbar-fixed-top"> <!-- navbar-defaut = couleurs foncées, navbar-inverse = couleurs claires -->
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">DGPP</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="carte.html">Carte</a></li>
+                        <li><a href="photos1.html">Photos</a></li>
+                        <li><a href="restaurants.html">Restaurants</a></li>
+                        <li class="active"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
-    <div id="main">
-    	<h1></h1>
+    <div id="main" class="container">
+        <form class="col-xs-12 col-md-6 col-md-offset-3">
+            <legend><h1>Contact</h1></legend>
+            <label for="prenom">Prénom : </label>
+            <input id="prenom" type="text" class="form-control">
+            <label for="nom">Nom : </label>
+            <input id="nom" type="text" class="form-control">
+            <label for="mail">Mail : </label>
+            <input id="mail" type="email" class="form-control">
+            <label for="select">Thème : </label>
+            <select id="select" class="form-control">
+                <option>Thème 1</option>
+                <option>Thème 2</option>
+                <option>Thème 3</option>
+            </select>
+            <label for="textarea">Textarea : </label>
+            <textarea id="textarea" type="textarea" class="form-control"></textarea>
+            <br>
+            <button><span class="glyphicon glyphicon-upload"></span> Envoyer</button>
+        </form>
 	</div>
     <footer>
     </footer>

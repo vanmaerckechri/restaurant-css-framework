@@ -169,6 +169,13 @@ body .restaurants .restauCoord {
     height: 100%;
     background-color: white; }
 
+/* CONTACT */
+form label {
+  margin-top: 1em;
+  color: white; }
+form textarea {
+  max-width: 100%; }
+
 /* variables */
 /* extend */
 .etablissementBg, #main section.jumbotron, #main #concertImg {
