@@ -4,7 +4,7 @@
 
 * [consignes détaillées](https://github.com/becodeorg/Swartz-promo-3/blob/master/Parcours/03-Bootstrap/projet.md)
 * Résumé des consignes:
-  * création d'un site multipages
+  * création d'un site de 5 pages thématiques
   * Utilisation de bootstrap
   * Responsive
 
