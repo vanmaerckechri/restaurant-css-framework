@@ -85,36 +85,20 @@ h1 {
 /* CARTE */
 table thead tr {
   width: 100%; }
-  table thead tr td {
-    font-size: 1.5em;
+  table thead tr th {
+    font-size: 1.2em;
     font-weight: 600; }
-table tbody tr {
-  border-bottom: 1px solid rgba(10, 10, 150, 0.2);
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
-  table tbody tr td {
-    border-top: none !important;
-    margin: auto 8px;
-    text-align: center; }
-  table tbody tr td.tableImg {
-    min-width: 150px;
-    max-width: 250px; }
-    table tbody tr td.tableImg img {
-      border-radius: 10px;
-      border: 1px solid black;
-      width: 100%;
-      height: auto;
-      transition: all .5s;
-      opacity: .8; }
-    table tbody tr td.tableImg :hover {
-      border: none;
-      transform: scale(1.2);
-      opacity: 1;
-      box-shadow: 2px 2px 6px rgba(0, 0, 20, 0.7); }
-  table tbody tr td.prix {
-    width: 10%;
-    font-size: 1.5em; }
+table tbody tr td.tableImg {
+  min-width: 150px;
+  max-width: 250px; }
+  table tbody tr td.tableImg img {
+    border-radius: 10px;
+    border: 1px solid black;
+    min-width: 100px;
+    max-width: 100%;
+    height: auto;
+    transition: all .5s;
+    opacity: .8; }
 
 .carteTitre {
   font-weight: 600;
@@ -209,6 +193,53 @@ body .restaurants .resto {
   body #main.photos {
     display: block; }
     body #main.photos h1 {
-      margin: .5em auto; } }
+      margin: .5em auto; }
+
+  /* TABLEAUX RESPONSIVES | https://bootsnipp.com/snippets/featured/no-more-tables-respsonsive-table | sergiopinnaprato */
+  /* Force table to not be like tables anymore */
+  #no-more-tables table,
+  #no-more-tables thead,
+  #no-more-tables tbody,
+  #no-more-tables th,
+  #no-more-tables td,
+  #no-more-tables tr {
+    display: block; }
+
+  /* Hide table headers (but not display: none;, for accessibility) */
+  #no-more-tables thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px; }
+
+  #no-more-tables tr {
+    border: 1px solid #ccc; }
+
+  #no-more-tables td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    white-space: normal;
+    /*padding-left: 50%;*/
+    text-align: left; }
+
+  #no-more-tables td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    text-align: left;
+    font-weight: bold; }
+
+  /* Label the data
+  	#no-more-tables td:before
+  	{
+  		content: attr(data-title);
+  	}
+  */ }
 
 /*# sourceMappingURL=style.css.map */
