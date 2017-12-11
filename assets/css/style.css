@@ -35,6 +35,9 @@ h1 {
   color: white;
   margin: 1em 0; }
 
+td {
+  padding: .2em; }
+
 /* variables */
 /* extend */
 .etablissementBg, #main section.jumbotron, #main #concertImg {
@@ -89,7 +92,7 @@ table thead tr {
     font-size: 1.2em;
     font-weight: 600; }
 table tbody tr td.tableImg {
-  min-width: 150px;
+  width: 150px;
   max-width: 250px; }
   table tbody tr td.tableImg img {
     border-radius: 10px;
@@ -97,8 +100,7 @@ table tbody tr td.tableImg {
     min-width: 100px;
     max-width: 100%;
     height: auto;
-    transition: all .5s;
-    opacity: .8; }
+    opacity: 1; }
 
 .carteTitre {
   font-weight: 600;
@@ -193,9 +195,9 @@ body .restaurants .resto {
   body #main.photos {
     display: block; }
     body #main.photos h1 {
-      margin: .5em auto; }
-
-  /* TABLEAUX RESPONSIVES | https://bootsnipp.com/snippets/featured/no-more-tables-respsonsive-table | sergiopinnaprato */
+      margin: .5em auto; } }
+/* TABLEAUX RESPONSIVES | https://bootsnipp.com/snippets/featured/no-more-tables-respsonsive-table | sergiopinnaprato */
+@media (max-width: 480px) {
   /* Force table to not be like tables anymore */
   #no-more-tables table,
   #no-more-tables thead,
@@ -204,6 +206,11 @@ body .restaurants .resto {
   #no-more-tables td,
   #no-more-tables tr {
     display: block; }
+
+  #no-more-tables table tbody tr td {
+    text-align: center; }
+  #no-more-tables table tbody tr td.tableImg {
+    margin: 0 auto; }
 
   /* Hide table headers (but not display: none;, for accessibility) */
   #no-more-tables thead tr {

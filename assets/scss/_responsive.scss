@@ -35,8 +35,10 @@
 			}
 		}
 	}
+}
 /* TABLEAUX RESPONSIVES | https://bootsnipp.com/snippets/featured/no-more-tables-respsonsive-table | sergiopinnaprato */
-    
+@media (max-width: 480px)
+{
     /* Force table to not be like tables anymore */
 	#no-more-tables table, 
 	#no-more-tables thead, 
@@ -47,7 +49,26 @@
 	{ 
 		display: block; 
 	}
- 
+	#no-more-tables
+	{
+		table
+		{
+			tbody
+			{
+				tr
+				{
+					td
+					{
+						text-align: center;
+					}
+					td.tableImg 
+					{					
+						margin: 0 auto;
+					}
+				}
+			}
+		}
+	}
 	/* Hide table headers (but not display: none;, for accessibility) */
 	#no-more-tables thead tr
 	{ 
