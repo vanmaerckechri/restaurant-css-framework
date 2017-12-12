@@ -74,48 +74,16 @@
 	{
 		margin-top: 2em;
 	}
-}
-
-table
-{
-	thead
+	.panel-heading
 	{
-		tr
-		{
-			width: 100%;
-			th
-			{
-				font-size: 1.2em;
-				font-weight: 600;
-			}
-		}
+		padding-top: 0;
+		padding-bottom: 0;
+		text-align: right;
 	}
-
-	tbody
+	ul.container
 	{
-		tr
-		{
-			td
-			{
-			}
-			td.tableImg
-			{
-				width: 150px;
-				max-width: 250px;
-				img
-				{
-					border-radius: 10px;
-					border: 1px solid black;
-					min-width: 100px;
-					max-width: 100%;
-					height: auto;
-					opacity: 1;
-				}
-			}
-			td.prix
-			{
-			}
-		}
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 }
 
