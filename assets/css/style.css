@@ -96,9 +96,57 @@ td {
   padding-top: 0;
   padding-bottom: 0;
   text-align: right; }
-.carte ul.container {
-  padding-left: 15px;
-  padding-right: 15px; }
+.carte .hamburger {
+  border-top: 2px solid #282832;
+  border-right: 2px solid #282832;
+  border-left: 2px solid #282832;
+  border-bottom: 2px solid black;
+  padding: 15px;
+  background-color: #1e1e28; }
+  .carte .hamburger ul {
+    margin: 0;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 2px solid #282832;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: #1e1e28; }
+    .carte .hamburger ul li {
+      margin-top: 20px;
+      display: inline-block;
+      width: 250px;
+      min-height: 250px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      box-shadow: 3px 3px 6px rgba(0, 0, 10, 0.9); }
+      .carte .hamburger ul li:first-child {
+        background-color: #ffffc8;
+        transform: rotate(5deg); }
+      .carte .hamburger ul li:nth-child(2) {
+        background-color: #ffc8c8;
+        transform: rotate(-10deg); }
+      .carte .hamburger ul li:nth-child(3) {
+        background-color: #c8ffc8;
+        transform: rotate(-2deg); }
+      .carte .hamburger ul li:nth-child(4) {
+        background-color: #c8ffc8;
+        transform: rotate(3deg); }
+      .carte .hamburger ul li:nth-child(5) {
+        background-color: #ffffc8;
+        transform: rotate(-5deg); }
+      .carte .hamburger ul li:nth-child(6) {
+        background-color: #ffc8c8;
+        transform: rotate(7deg); }
+      .carte .hamburger ul li h3 {
+        font-size: 1.5em; }
+      .carte .hamburger ul li .badge {
+        font-size: 1.5em;
+        background-color: black; }
 
 .carteTitre {
   font-weight: 600;
