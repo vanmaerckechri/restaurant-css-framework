@@ -165,20 +165,13 @@ td {
   flex-direction: column;
   justify-content: space-around;
   height: 90vh; }
-  #main.photos h1 {
-    margin: 0; }
   #main.photos #galerie div a img {
+    border: 2px solid black;
     width: 100%;
     height: 50vh;
     object-fit: cover;
     opacity: .8;
     transition: all 1s; }
-    #main.photos #galerie div a img:hover {
-      border: 1px solid white;
-      transform: scale(1.2);
-      border-radius: 10px;
-      opacity: 1;
-      z-index: 10; }
 
 body nav {
   text-align: center; }
@@ -227,6 +220,32 @@ body .restaurants .resto {
   text-shadow: 1px 1px 1px #000014; }
 
 /* RESPONSIVE */
+@media (min-width: 768px) {
+  #main.photos #galerie div {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 15px 5px 60px;
+    background-color: white; }
+    #main.photos #galerie div a img:hover {
+      border: 1px solid white;
+      transform: scale(1.2);
+      border-radius: 10px;
+      opacity: 1;
+      z-index: 10; }
+    #main.photos #galerie div:nth-child(1) {
+      transform: rotate(4deg);
+      transition: .5s; }
+    #main.photos #galerie div:nth-child(2) {
+      transform: rotate(-2deg);
+      transition: .5s; }
+    #main.photos #galerie div:nth-child(3) {
+      transform: rotate(6deg);
+      transition: .5s; }
+    #main.photos #galerie div:hover {
+      border: none;
+      transform: rotate(0deg);
+      background: none;
+      z-index: 1000; } }
 @media (max-width: 767px) {
   .navbar-inverse ul.navbar-nav li {
     text-align: center;
@@ -242,57 +261,5 @@ body .restaurants .resto {
     display: block; }
     body #main.photos h1 {
       margin: .5em auto; } }
-/* TABLEAUX RESPONSIVES | https://bootsnipp.com/snippets/featured/no-more-tables-respsonsive-table | sergiopinnaprato */
-@media (max-width: 480px) {
-  /* Force table to not be like tables anymore */
-  #no-more-tables table,
-  #no-more-tables thead,
-  #no-more-tables tbody,
-  #no-more-tables th,
-  #no-more-tables td,
-  #no-more-tables tr {
-    display: block; }
-
-  #no-more-tables table tbody tr td {
-    text-align: center; }
-  #no-more-tables table tbody tr td.tableImg {
-    margin: 0 auto; }
-
-  /* Hide table headers (but not display: none;, for accessibility) */
-  #no-more-tables thead tr {
-    position: absolute;
-    top: -9999px;
-    left: -9999px; }
-
-  #no-more-tables tr {
-    border: 1px solid #ccc; }
-
-  #no-more-tables td {
-    /* Behave  like a "row" */
-    border: none;
-    border-bottom: 1px solid #eee;
-    position: relative;
-    white-space: normal;
-    /*padding-left: 50%;*/
-    text-align: left; }
-
-  #no-more-tables td:before {
-    /* Now like a table header */
-    position: absolute;
-    /* Top/left values mimic padding */
-    top: 6px;
-    left: 6px;
-    width: 45%;
-    padding-right: 10px;
-    white-space: nowrap;
-    text-align: left;
-    font-weight: bold; }
-
-  /* Label the data
-  	#no-more-tables td:before
-  	{
-  		content: attr(data-title);
-  	}
-  */ }
 
 /*# sourceMappingURL=style.css.map */
