@@ -247,6 +247,9 @@ body .restaurants .resto {
       background: none;
       z-index: 1000; } }
 @media (max-width: 767px) {
+  h1, h2 {
+    text-align: center; }
+
   .navbar-inverse ul.navbar-nav li {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.5);
