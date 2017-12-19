@@ -2,66 +2,70 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Du Gras Plein la Panse - Calendrier</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="assets/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <script src="assets/bootstrap-3.3.7-dist/jquery-3.2.1.slim.min.js"></script>
-    <script src="assets/bootstrap-3.3.7-dist/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="assets/bootstrap-4beta2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Offline - Du Gras Plein la Panse</title>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-inverse navbar-fixed-top"> <!-- navbar-defaut = couleurs foncées, navbar-inverse = couleurs claires -->
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">DGPP</a>
-                </div>
-                <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="index.html">Accueil</a></li>
-                        <li><a href="carte.html">Carte</a></li>
-                        <li><a href="photos1.html">Photos</a></li>
-                        <li><a href="restaurants.html">Restaurants</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
     </header>
-    <div id="main">
-        <section class="jumbotron container-fluid">
-            <h1 class="container">Du Gras Plein la Panse,</h1>
-            <p class="container">un Restaurant qui Marie Elégance et Raffinement.</p>
-        </section>
-        <section id="nouveautes" class="panel panel-warning"><!-- Thèmes = .panel-default , .panel-primary , .panel-success , .panel-info , .panel-warning, .panel-danger -->
+    <div id="main" class="carte">
+        <h1 class="container">La Carte</h1>
+        <section class="panel panel-warning">
             <div class="panel-heading container-fluid">
-                <h2 class="container">Nouveautés</h2>
+                <h2 class="col-md-8 col-md-offset-2">Les Hamburgers</h2>
             </div>
-            <div class="panel-body container">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis maxime repudiandae libero non placeat? Accusantium voluptates quod mollitia sed repellat molestias, explicabo deleniti doloremque alias blanditiis voluptas beatae in qui!</p>
-                <p>Optio, necessitatibus aliquid inventore.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, accusantium repellat, culpa quas, consectetur totam ipsa dolore labore aspernatur dicta commodi incidunt. Temporibus obcaecati nobis ea aut rerum quidem officiis.</p>
+            <div class="col-md-8 col-md-offset-2 hamburger">
+                <ul class="list-group col-md-12">
+                    <li class="list-group-item justify-content-between">
+                        <h3>Classique</h3>
+                        <p>150g de boeuf, <br/>des oignons rouges, <br/>de la salade, <br/>des tomates, <br/>sauce maison</p> 
+                        <span class="badge badge-default badge-pill">12€</span>
+                    </li>
+                    <li class="list-group-item justify-content-between">
+                        <h3>Poulet</h3>
+                        <p>150g de poulet, <br/>des oignons rouges, <br/>de la salade, <br/>des tomates, <br/>sauce maison</p> 
+                        <span class="badge badge-default badge-pill">12€</span>
+                    </li>
+                    <li class="list-group-item justify-content-between">
+                        <h3>Poisson</h3>
+                        <p>150g de colin, <br/>des oignons rouges, <br/>de la salade, <br/>des tomates, <br/>sauce maison</p> 
+                        <span class="badge badge-default badge-pill">12€</span>
+                    </li>
+                    <li class="list-group-item justify-content-between">
+                        <h3>Bacon</h3>
+                        <p>150g de boeuf, <br/>des tranches de bacon, <br/>des oignons rouges, <br/>de la salade, <br/>des tomates, <br/>sauce maison</p> 
+                        <span class="badge badge-default badge-pill">14€</span>
+                    </li>
+                    <li class="list-group-item justify-content-between">
+                        <h3>Double</h3>
+                        <p>2X150g de boeuf, <br/>des oignons rouges, <br/>de la salade, <br/>des tomates, <br/>sauce maison</p> 
+                        <span class="badge badge-default badge-pill">18€</span>
+                    </li>
+                    <li class="list-group-item justify-content-between">
+                        <h3>Triple</h3>
+                        <p>3X150g de boeuf, <br/>des oignons rouges, <br/>de la salade, <br/>des tomates, <br/>sauce maison</p> 
+                        <span class="badge badge-default badge-pill">23€</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-md-6 resto1">
+                <h2>Restaurant sur Bruxelles</h2>
+                <p>Cantersteen 10, 1000 Bruxelles</p>
+                <p>+32 22 222 222</p>
+                <h2>Restaurant dans le Brabant Wallon</h2>
+                <p>Boulevard de l'Europe 100, 1300 Wavre</p>
+                <p>+32 10 111 111</p>
             </div>
         </section>
-        <div id="concertImg"></div>
-        <section id="concert" class="panel panel-warning">
-            <div class="panel-heading container-fluid">
-                <h2 class="container">Concerts à Venir</h2>
-            </div>
-            <div class="panel-body container">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione pariatur, enim, tempora explicabo doloremque atque tenetur distinctio, reprehenderit voluptatum, consequuntur nemo! Nulla dolores exercitationem cum consequatur. Optio, necessitatibus aliquid inventore.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, accusantium repellat, culpa quas, consectetur totam ipsa dolore labore aspernatur dicta commodi incidunt. Temporibus obcaecati nobis ea aut rerum quidem officiis.</p>
-                <p>Optio, necessitatibus aliquid inventore.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, accusantium repellat, culpa quas, consectetur totam ipsa dolore labore aspernatur dicta commodi incidunt. Temporibus obcaecati nobis ea aut rerum quidem officiis.</p>
-        </section>
-	</div>
+    </div>
     <footer>
     </footer>
+    <script src="assets/bootstrap-3.3.7-dist/jquery-3.2.1.slim.min.js"></script>
+    <script src="assets/bootstrap-3.3.7-dist/popper.min.js"></script>
+    <script src="assets/bootstrap-4beta2/js/bootstrap.min.js"></script>
 </body>
 </html>
