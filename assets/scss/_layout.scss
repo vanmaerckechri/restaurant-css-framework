@@ -86,7 +86,7 @@
 		border-right: 2px solid $perspLum;
 		border-left: 2px solid $perspLum;
 		border-bottom: 2px solid black;
-		padding: 15px;
+		padding: 12px;
 		background-color: rgb(30, 30, 40);
 		ul
 		{	
@@ -272,3 +272,20 @@ body
 	}
 }
 
+/* OFFLINE */
+
+.offline
+{
+	margin-bottom: 2em;
+	padding-bottom: 2em;
+	background-color: black;
+	color: white;
+	text-align: center;
+	div:nth-child(2)
+	{
+		h2
+		{
+			margin-top: 2em;
+		}
+	}
+}

@@ -101,7 +101,7 @@ td {
   border-right: 2px solid #282832;
   border-left: 2px solid #282832;
   border-bottom: 2px solid black;
-  padding: 15px;
+  padding: 12px;
   background-color: #1e1e28; }
   .carte .hamburger ul {
     margin: 0;
@@ -208,6 +208,16 @@ body .restaurants .resto {
     color: white; }
   #main.contact form textarea {
     max-width: 100%; }
+
+/* OFFLINE */
+.offline {
+  margin-bottom: 2em;
+  padding-bottom: 2em;
+  background-color: black;
+  color: white;
+  text-align: center; }
+  .offline div:nth-child(2) h2 {
+    margin-top: 2em; }
 
 /* variables */
 /* extend */
