@@ -13,19 +13,13 @@
 				border-radius: 10px;
 				padding: 15px 5px 60px;
 				background-color: white;
-				a
+				&:hover a img
 				{
-					img
-					{
-						&:hover
-						{
-							border: 1px solid white;
-							transform: scale(1.2);
-							border-radius: 10px;
-							opacity: 1;
-							z-index: 10;
-						}
-					}
+					border: 1px solid white;
+					transform: scale(1.2);
+					border-radius: 10px;
+					opacity: 1;
+					z-index: 10;
 				}
 				&:nth-child(1)
 				{
