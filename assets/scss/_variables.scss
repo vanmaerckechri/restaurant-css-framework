@@ -1,10 +1,25 @@
 /* variables */
 $perspLum: rgb(40, 40, 50);
-$postite1: rgb(255, 255, 200);
-$postite2: rgb(255, 200, 200);
-$postite3: rgb(200, 255, 200);
 
 /* extend */
+.postite1
+{
+	background-image:linear-gradient(rgb(255, 255, 225), rgb(255, 235, 215));
+}
+.postite2
+{
+	background-image:linear-gradient(rgb(255, 225, 225), rgb(235, 225, 225));
+}
+.postite3
+{
+	background-image:linear-gradient(rgb(225, 255, 225), rgb(235, 255, 235));
+}
+.postite4
+{
+	background-image:linear-gradient(rgb(225, 225, 255), rgb(235, 225, 255));
+}
+
+
 .etablissementBg
 {
 	background-size: cover;
@@ -13,5 +28,5 @@ $postite3: rgb(200, 255, 200);
 .textCouleurEtOmbres
 {
 	color: white;
-	text-shadow: 1px 1px 1px rgba(0, 0, 20, 1);
+	text-shadow: 1px 1px 3px rgba(0, 0, 20, 1);
 }

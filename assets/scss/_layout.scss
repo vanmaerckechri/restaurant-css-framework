@@ -20,6 +20,10 @@
 		{
 			@extend .textCouleurEtOmbres;
 		}
+		p
+		{
+			font-size: 24px;
+		}
 	}
 
 /* ACCUEIL */
@@ -55,6 +59,7 @@
 			{
 				color: white;
 				line-height: 2em;
+				font-size: 18px;
 			}
 		}
 	}
@@ -70,6 +75,12 @@
 
 .carte
 {
+	section
+	{
+		border: none;
+		background-color: black;
+		margin-bottom: 20em;
+	}
 	h1
 	{
 		margin-top: 2em;
@@ -79,6 +90,14 @@
 		padding-top: 0;
 		padding-bottom: 0;
 		text-align: right;
+	}
+	p.panel-body
+	{
+		margin-top: 10px;
+		background-color: black;
+		color: white;
+		font-size: 30px;
+    	font-family: 'Indie Flower', cursive;
 	}
 	.hamburger
 	{
@@ -113,41 +132,45 @@
 				box-shadow: 3px 3px 6px rgba(0, 0, 10, .9);
 				&:first-child
 				{
-					background-color: $postite1;
+					@extend .postite1;
 					transform: rotate(5deg);
 				}
 				&:nth-child(2)
 				{
-					background-color: $postite2;
+					@extend .postite2;
 					transform: rotate(-10deg);
 				}
 				&:nth-child(3)
 				{
-					background-color: $postite3;
+					@extend .postite3;
 					transform: rotate(-2deg);
 				}
 				&:nth-child(4)
 				{
-					background-color: $postite3;
+					@extend .postite4;
 					transform: rotate(3deg);
 				}
 				&:nth-child(5)
 				{
-					background-color: $postite1;
+					@extend .postite2;
 					transform: rotate(-5deg);
 				}
 				&:nth-child(6)
 				{
-					background-color: $postite2;
+					@extend .postite1;
 					transform: rotate(7deg);
+				}
+				p
+				{
+					font-size: 18px;
 				}
 				h3
 				{
-					font-size: 1.5em;
+					font-size: 30px;
 				}
 				.badge
 				{
-					font-size: 1.5em;
+					font-size: 24px;
 					background-color: black;
 				}
 			}
@@ -219,11 +242,20 @@ body
 		}
 		.resto
 		{
+			h2, p
+			{
+				background-color: rgba(0, 0, 0, .7);
+			}
+			h2
+			{
+				margin: 25px 0;
+			}
 			border: 2px solid white;
 			margin-bottom: 1em;
 			.resto1, .resto2
 			{
 				@extend .textCouleurEtOmbres;
+				font-size: 18px;
 				height: 422px;
 			}
 			.resto1

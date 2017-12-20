@@ -1,28 +1,55 @@
 /* @import "reset"; */
 /* variables */
 /* extend */
+.postite1, .carte .hamburger ul li:first-child, .carte .hamburger ul li:nth-child(6) {
+  background-image: linear-gradient(#ffffe1, #ffebd7); }
+
+.postite2, .carte .hamburger ul li:nth-child(2), .carte .hamburger ul li:nth-child(5) {
+  background-image: linear-gradient(#ffe1e1, #ebe1e1); }
+
+.postite3, .carte .hamburger ul li:nth-child(3) {
+  background-image: linear-gradient(#e1ffe1, #ebffeb); }
+
+.postite4, .carte .hamburger ul li:nth-child(4) {
+  background-image: linear-gradient(#e1e1ff, #ebe1ff); }
+
 .etablissementBg, #main section.jumbotron, #main #concertImg {
   background-size: cover;
   background-attachment: fixed; }
 
 .textCouleurEtOmbres, #main section.jumbotron h1, #main section.jumbotron p, body .restaurants .resto .resto1, body .restaurants .resto .resto2 {
   color: white;
-  text-shadow: 1px 1px 1px #000014; }
+  text-shadow: 1px 1px 3px #000014; }
 
 /* ANIMATIONS */
 /* variables */
 /* extend */
+.postite1, .carte .hamburger ul li:first-child, .carte .hamburger ul li:nth-child(6) {
+  background-image: linear-gradient(#ffffe1, #ffebd7); }
+
+.postite2, .carte .hamburger ul li:nth-child(2), .carte .hamburger ul li:nth-child(5) {
+  background-image: linear-gradient(#ffe1e1, #ebe1e1); }
+
+.postite3, .carte .hamburger ul li:nth-child(3) {
+  background-image: linear-gradient(#e1ffe1, #ebffeb); }
+
+.postite4, .carte .hamburger ul li:nth-child(4) {
+  background-image: linear-gradient(#e1e1ff, #ebe1ff); }
+
 .etablissementBg, #main section.jumbotron, #main #concertImg {
   background-size: cover;
   background-attachment: fixed; }
 
 .textCouleurEtOmbres, #main section.jumbotron h1, #main section.jumbotron p, body .restaurants .resto .resto1, body .restaurants .resto .resto2 {
   color: white;
-  text-shadow: 1px 1px 1px #000014; }
+  text-shadow: 1px 1px 3px #000014; }
 
 /* BALISES */
 body {
   background-color: black; }
+
+header {
+  font-size: 18px; }
 
 nav {
   min-height: 50px; }
@@ -44,13 +71,25 @@ td {
 
 /* variables */
 /* extend */
+.postite1, .carte .hamburger ul li:first-child, .carte .hamburger ul li:nth-child(6) {
+  background-image: linear-gradient(#ffffe1, #ffebd7); }
+
+.postite2, .carte .hamburger ul li:nth-child(2), .carte .hamburger ul li:nth-child(5) {
+  background-image: linear-gradient(#ffe1e1, #ebe1e1); }
+
+.postite3, .carte .hamburger ul li:nth-child(3) {
+  background-image: linear-gradient(#e1ffe1, #ebffeb); }
+
+.postite4, .carte .hamburger ul li:nth-child(4) {
+  background-image: linear-gradient(#e1e1ff, #ebe1ff); }
+
 .etablissementBg, #main section.jumbotron, #main #concertImg {
   background-size: cover;
   background-attachment: fixed; }
 
 .textCouleurEtOmbres, #main section.jumbotron h1, #main section.jumbotron p, body .restaurants .resto .resto1, body .restaurants .resto .resto2 {
   color: white;
-  text-shadow: 1px 1px 1px #000014; }
+  text-shadow: 1px 1px 3px #000014; }
 
 /* COMMUN */
 .navbar-toggle .icon-bar {
@@ -66,6 +105,8 @@ td {
     background: url("../images/etablissement.jpg");
     min-height: calc(100vh - 50px);
     text-align: right; }
+    #main section.jumbotron p {
+      font-size: 24px; }
   #main section#nouveautes {
     position: absolute;
     top: calc(100vh - 300px);
@@ -84,18 +125,29 @@ td {
       border: none; }
     #main section#nouveautes .panel-body p, #main section#concert .panel-body p {
       color: white;
-      line-height: 2em; }
+      line-height: 2em;
+      font-size: 18px; }
   #main #concertImg {
     background: url("../images/concert.jpg");
     min-height: 100vh; }
 
 /* CARTE */
+.carte section {
+  border: none;
+  background-color: black;
+  margin-bottom: 20em; }
 .carte h1 {
   margin-top: 2em; }
 .carte .panel-heading {
   padding-top: 0;
   padding-bottom: 0;
   text-align: right; }
+.carte p.panel-body {
+  margin-top: 10px;
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  font-family: 'Indie Flower', cursive; }
 .carte .hamburger {
   border-top: 2px solid #282832;
   border-right: 2px solid #282832;
@@ -125,27 +177,23 @@ td {
       align-items: center;
       box-shadow: 3px 3px 6px rgba(0, 0, 10, 0.9); }
       .carte .hamburger ul li:first-child {
-        background-color: #ffffc8;
         transform: rotate(5deg); }
       .carte .hamburger ul li:nth-child(2) {
-        background-color: #ffc8c8;
         transform: rotate(-10deg); }
       .carte .hamburger ul li:nth-child(3) {
-        background-color: #c8ffc8;
         transform: rotate(-2deg); }
       .carte .hamburger ul li:nth-child(4) {
-        background-color: #c8ffc8;
         transform: rotate(3deg); }
       .carte .hamburger ul li:nth-child(5) {
-        background-color: #ffffc8;
         transform: rotate(-5deg); }
       .carte .hamburger ul li:nth-child(6) {
-        background-color: #ffc8c8;
         transform: rotate(7deg); }
+      .carte .hamburger ul li p {
+        font-size: 18px; }
       .carte .hamburger ul li h3 {
-        font-size: 1.5em; }
+        font-size: 30px; }
       .carte .hamburger ul li .badge {
-        font-size: 1.5em;
+        font-size: 24px;
         background-color: black; }
 
 .carteTitre {
@@ -183,7 +231,12 @@ body .restaurants h1 {
 body .restaurants .resto {
   border: 2px solid white;
   margin-bottom: 1em; }
+  body .restaurants .resto h2, body .restaurants .resto p {
+    background-color: rgba(0, 0, 0, 0.7); }
+  body .restaurants .resto h2 {
+    margin: 25px 0; }
   body .restaurants .resto .resto1, body .restaurants .resto .resto2 {
+    font-size: 18px;
     height: 422px; }
   body .restaurants .resto .resto1 {
     background: url("../images/restaurant1.jpg") no-repeat;
@@ -221,13 +274,25 @@ body .restaurants .resto {
 
 /* variables */
 /* extend */
+.postite1, .carte .hamburger ul li:first-child, .carte .hamburger ul li:nth-child(6) {
+  background-image: linear-gradient(#ffffe1, #ffebd7); }
+
+.postite2, .carte .hamburger ul li:nth-child(2), .carte .hamburger ul li:nth-child(5) {
+  background-image: linear-gradient(#ffe1e1, #ebe1e1); }
+
+.postite3, .carte .hamburger ul li:nth-child(3) {
+  background-image: linear-gradient(#e1ffe1, #ebffeb); }
+
+.postite4, .carte .hamburger ul li:nth-child(4) {
+  background-image: linear-gradient(#e1e1ff, #ebe1ff); }
+
 .etablissementBg, #main section.jumbotron, #main #concertImg {
   background-size: cover;
   background-attachment: fixed; }
 
 .textCouleurEtOmbres, #main section.jumbotron h1, #main section.jumbotron p, body .restaurants .resto .resto1, body .restaurants .resto .resto2 {
   color: white;
-  text-shadow: 1px 1px 1px #000014; }
+  text-shadow: 1px 1px 3px #000014; }
 
 /* RESPONSIVE */
 @media (min-width: 768px) {
