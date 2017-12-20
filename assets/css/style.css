@@ -101,6 +101,11 @@ td {
   height: 2px;
   width: 22px; }
 
+.navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a, .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-left: 1px solid white;
+  border-right: 1px solid white; }
+
 #main {
   /* ACCUEIL */ }
   #main section.jumbotron {
