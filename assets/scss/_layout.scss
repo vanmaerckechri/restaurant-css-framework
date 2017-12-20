@@ -11,10 +11,13 @@
 {
 	section.jumbotron
 	{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 		@extend .etablissementBg;
 		margin-bottom: 0;
 		background: url("../images/etablissement.jpg");
-		min-height: calc(100vh - 50px);
+		min-height: 80vh;
 		text-align: right;
 		h1, p
 		{
@@ -29,10 +32,10 @@
 /* ACCUEIL */
 	section#nouveautes
 	{
-		position: absolute;
-		top: calc(100vh - 300px);
+		min-height: 20vh;
+		top: calc(100vh - 200px);
 		left: 0;
-		background-color: rgba(0, 0, 0, .7);
+		background-color: rgb(0, 0, 0);
 	}
 	section#concert
 	{
@@ -43,7 +46,6 @@
 		margin-bottom: 0;
 		border: 1px solid black;
 		border-radius: 0;
-		min-height: 250px;
 		width: 100%;
 		box-shadow: 1px 1px 5px rgba(10, 0, 40, 1);
 		.panel-heading
@@ -65,9 +67,16 @@
 	}
 	#concertImg
 	{
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		@extend .etablissementBg;
 		background: url("../images/concert.jpg");
-		min-height: 100vh;	
+		min-height: 100vh;
+		blockquote
+		{
+			@extend .textCouleurEtOmbres;
+		}
 	}
 }
 
@@ -79,7 +88,7 @@
 	{
 		border: none;
 		background-color: black;
-		margin-bottom: 20em;
+		margin-bottom: 50px;
 	}
 	h1
 	{

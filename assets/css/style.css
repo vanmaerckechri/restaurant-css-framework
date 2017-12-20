@@ -17,7 +17,7 @@
   background-size: cover;
   background-attachment: fixed; }
 
-.textCouleurEtOmbres, #main section.jumbotron h1, #main section.jumbotron p, body .restaurants .resto .resto1, body .restaurants .resto .resto2 {
+.textCouleurEtOmbres, #main section.jumbotron h1, #main section.jumbotron p, #main #concertImg blockquote, body .restaurants .resto .resto1, body .restaurants .resto .resto2 {
   color: white;
   text-shadow: 1px 1px 3px #000014; }
 
@@ -40,7 +40,7 @@
   background-size: cover;
   background-attachment: fixed; }
 
-.textCouleurEtOmbres, #main section.jumbotron h1, #main section.jumbotron p, body .restaurants .resto .resto1, body .restaurants .resto .resto2 {
+.textCouleurEtOmbres, #main section.jumbotron h1, #main section.jumbotron p, #main #concertImg blockquote, body .restaurants .resto .resto1, body .restaurants .resto .resto2 {
   color: white;
   text-shadow: 1px 1px 3px #000014; }
 
@@ -57,6 +57,9 @@ nav {
 #main {
   position: relative;
   margin-top: 50px; }
+
+blockquote {
+  font-size: 24px; }
 
 h1 {
   color: white;
@@ -87,7 +90,7 @@ td {
   background-size: cover;
   background-attachment: fixed; }
 
-.textCouleurEtOmbres, #main section.jumbotron h1, #main section.jumbotron p, body .restaurants .resto .resto1, body .restaurants .resto .resto2 {
+.textCouleurEtOmbres, #main section.jumbotron h1, #main section.jumbotron p, #main #concertImg blockquote, body .restaurants .resto .resto1, body .restaurants .resto .resto2 {
   color: white;
   text-shadow: 1px 1px 3px #000014; }
 
@@ -101,24 +104,26 @@ td {
 #main {
   /* ACCUEIL */ }
   #main section.jumbotron {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin-bottom: 0;
     background: url("../images/etablissement.jpg");
-    min-height: calc(100vh - 50px);
+    min-height: 80vh;
     text-align: right; }
     #main section.jumbotron p {
       font-size: 24px; }
   #main section#nouveautes {
-    position: absolute;
-    top: calc(100vh - 300px);
+    min-height: 20vh;
+    top: calc(100vh - 200px);
     left: 0;
-    background-color: rgba(0, 0, 0, 0.7); }
+    background-color: black; }
   #main section#concert {
     background-color: black; }
   #main section#nouveautes, #main section#concert {
     margin-bottom: 0;
     border: 1px solid black;
     border-radius: 0;
-    min-height: 250px;
     width: 100%;
     box-shadow: 1px 1px 5px #0a0028; }
     #main section#nouveautes .panel-heading, #main section#concert .panel-heading {
@@ -128,6 +133,9 @@ td {
       line-height: 2em;
       font-size: 18px; }
   #main #concertImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: url("../images/concert.jpg");
     min-height: 100vh; }
 
@@ -135,7 +143,7 @@ td {
 .carte section {
   border: none;
   background-color: black;
-  margin-bottom: 20em; }
+  margin-bottom: 50px; }
 .carte h1 {
   margin-top: 2em; }
 .carte .panel-heading {
@@ -290,7 +298,7 @@ body .restaurants .resto {
   background-size: cover;
   background-attachment: fixed; }
 
-.textCouleurEtOmbres, #main section.jumbotron h1, #main section.jumbotron p, body .restaurants .resto .resto1, body .restaurants .resto .resto2 {
+.textCouleurEtOmbres, #main section.jumbotron h1, #main section.jumbotron p, #main #concertImg blockquote, body .restaurants .resto .resto1, body .restaurants .resto .resto2 {
   color: white;
   text-shadow: 1px 1px 3px #000014; }
 
