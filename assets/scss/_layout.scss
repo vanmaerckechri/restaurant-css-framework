@@ -12,11 +12,7 @@ body
 			align-items: baseline;
 			span
 			{
-
-
-    font-family: 'Cinzel', serif;
-
-
+				font-family: 'Cinzel', serif;
 				font-size: 18px;
 			}
 			a
@@ -34,6 +30,14 @@ body
 				}
 			}
 		}
+	}
+}
+.navbar
+{
+	border-bottom: 2px solid #333333;
+	ul
+	{
+		margin: 0;
 	}
 }
 .navbar-toggle .icon-bar
@@ -134,11 +138,6 @@ body
 		border: none;
 		background-color: black;
 		margin-bottom: 50px;
-	}
-	.panel-heading
-	{
-		padding-top: 0;
-		padding-bottom: 0;
 	}
 	p.panel-body
 	{

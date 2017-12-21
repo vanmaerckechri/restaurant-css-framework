@@ -24,9 +24,11 @@
 /* ANIMATIONS */
 @keyframes social {
   0% {
-    transform: scale(1, 1); }
+    transform: scale(1, 1);
+    transform-origin: center bottom; }
   100% {
-    transform: scale(1.1, 0.9); } }
+    transform: scale(1.1, 0.9);
+    transform-origin: center bottom; } }
 /* variables */
 /* extend */
 .postite1, .carte .hamburger li:first-child, .carte .hamburger li:nth-child(6), .carte .salades li:nth-child(3), .carte .salades li:nth-child(5) {
@@ -68,6 +70,7 @@ nav {
   margin-top: 50px; }
 
 footer {
+  border-top: 2px solid #333333;
   padding: 10px;
   background-color: #222222;
   color: white; }
@@ -123,6 +126,11 @@ body footer div {
     animation-name: social;
     animation-iteration-count: infinite;
     animation-direction: alternate; }
+
+.navbar {
+  border-bottom: 2px solid #333333; }
+  .navbar ul {
+    margin: 0; }
 
 .navbar-toggle .icon-bar {
   border-radius: 1px;
@@ -181,9 +189,6 @@ body footer div {
   border: none;
   background-color: black;
   margin-bottom: 50px; }
-.carte .panel-heading {
-  padding-top: 0;
-  padding-bottom: 0; }
 .carte p.panel-body {
   margin-top: 10px;
   background-color: black;
@@ -383,6 +388,8 @@ body .restaurants .resto {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.5);
     border-bottom: 1px solid white; }
+    .navbar-inverse ul.navbar-nav li:first-child {
+      border-top: 1px solid white; }
     .navbar-inverse ul.navbar-nav li a {
       color: white; }
       .navbar-inverse ul.navbar-nav li a:hover {
