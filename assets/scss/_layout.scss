@@ -5,13 +5,15 @@ body
 {
 	footer
 	{
-		div
+		.container
 		{
+			padding: 0;
 			display: flex;
 			flex-wrap: wrap;
 			align-items: baseline;
 			span
 			{
+				margin: 0;
 				font-family: 'Cinzel', serif;
 				font-size: 18px;
 			}

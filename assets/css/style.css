@@ -71,7 +71,7 @@ nav {
 
 footer {
   border-top: 2px solid #333333;
-  padding: 10px;
+  padding: 10px 0;
   background-color: #222222;
   color: white; }
 
@@ -112,16 +112,18 @@ td {
   text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black; }
 
 /* COMMUN */
-body footer div {
+body footer .container {
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   align-items: baseline; }
-  body footer div span {
+  body footer .container span {
+    margin: 0;
     font-family: 'Cinzel', serif;
     font-size: 18px; }
-  body footer div a:last-child {
+  body footer .container a:last-child {
     opacity: .5; }
-  body footer div a img {
+  body footer .container a img {
     animation-duration: .5s;
     animation-name: social;
     animation-iteration-count: infinite;
