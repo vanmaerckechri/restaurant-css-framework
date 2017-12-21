@@ -1,11 +1,14 @@
 @import "variables";
 
 /* ANIMATIONS */
-@keyframes nomAnimation {
+@keyframes social {
     0%
     {
+    	 transform: scale(1, 1);
+
 	}
     100%
     {
+    	 transform: scale(1.1, 0.9);
     }
 }

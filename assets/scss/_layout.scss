@@ -1,6 +1,41 @@
 @import "variables";
 
 /* COMMUN */
+body
+{
+	footer
+	{
+		div
+		{
+			display: flex;
+			flex-wrap: wrap;
+			align-items: baseline;
+			span
+			{
+
+
+    font-family: 'Cinzel', serif;
+
+
+				font-size: 18px;
+			}
+			a
+			{
+				&:last-child
+				{
+					opacity: .5;
+				}
+				img
+				{
+					animation-duration: .5s;
+  					animation-name: social;
+  					animation-iteration-count: infinite;
+  					animation-direction: alternate;
+				}
+			}
+		}
+	}
+}
 .navbar-toggle .icon-bar
 {
 	border-radius: 1px;
@@ -100,10 +135,6 @@
 		background-color: black;
 		margin-bottom: 50px;
 	}
-	h1
-	{
-		margin-top: 2em;
-	}
 	.panel-heading
 	{
 		padding-top: 0;
@@ -147,7 +178,7 @@
 				flex-direction: column;
 				justify-content: space-around;
 				align-items: center;
-				box-shadow: 3px 3px 6px rgba(0, 0, 10, .9);
+				box-shadow: 3px 3px 6px 3px rgba(0, 0, 10, .9);
 				p
 				{
 					font-size: 18px;
@@ -254,11 +285,6 @@
 /* PHOTOGRAPHIES */
 #main.photos
 {
-	margin-top: 60px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	height: 90vh;
 	h1
 	{
 	}
@@ -280,6 +306,26 @@
 			}
 		}
 	}
+	ul.pagination
+	{
+		li
+		{
+			a
+			{
+				font-size: 18px;
+				color: #8A6D3B;
+			}
+		}
+		li.active
+		{
+			a
+			{
+				border: 1px solid black;
+				color: white;
+				background-color: #8A6D3B;
+			}
+		}
+	}
 }
 body
 {
@@ -293,10 +339,6 @@ body
 {
 	.restaurants
 	{
-		h1
-		{
-			margin-top: 50px;
-		}
 		.resto
 		{
 			h2
@@ -341,7 +383,7 @@ body
 
 #main.contact
 {
-	min-height: calc(100vh - 50px);
+	min-height: 100%;
 	display: flex;
 	align-items: center;
 	form

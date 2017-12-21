@@ -22,6 +22,11 @@
   text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black; }
 
 /* ANIMATIONS */
+@keyframes social {
+  0% {
+    transform: scale(1, 1); }
+  100% {
+    transform: scale(1.1, 0.9); } }
 /* variables */
 /* extend */
 .postite1, .carte .hamburger li:first-child, .carte .hamburger li:nth-child(6), .carte .salades li:nth-child(3), .carte .salades li:nth-child(5) {
@@ -46,6 +51,10 @@
 
 /* BALISES */
 body {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 100vh;
   background-color: black; }
 
 header {
@@ -58,12 +67,17 @@ nav {
   position: relative;
   margin-top: 50px; }
 
+footer {
+  padding: 10px;
+  background-color: #222222;
+  color: white; }
+
 blockquote {
   font-size: 24px; }
 
 h1 {
   color: white;
-  margin: 1em 0; }
+  margin: 50px 0; }
 
 h2 {
   margin-top: 0;
@@ -95,6 +109,21 @@ td {
   text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black; }
 
 /* COMMUN */
+body footer div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline; }
+  body footer div span {
+    font-family: 'Cinzel', serif;
+    font-size: 18px; }
+  body footer div a:last-child {
+    opacity: .5; }
+  body footer div a img {
+    animation-duration: .5s;
+    animation-name: social;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; }
+
 .navbar-toggle .icon-bar {
   border-radius: 1px;
   display: block;
@@ -152,8 +181,6 @@ td {
   border: none;
   background-color: black;
   margin-bottom: 50px; }
-.carte h1 {
-  margin-top: 2em; }
 .carte .panel-heading {
   padding-top: 0;
   padding-bottom: 0; }
@@ -190,7 +217,7 @@ td {
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
-      box-shadow: 3px 3px 6px rgba(0, 0, 10, 0.9); }
+      box-shadow: 3px 3px 6px 3px rgba(0, 0, 10, 0.9); }
       .carte .plats ul li p {
         font-size: 18px; }
       .carte .plats ul li h3 {
@@ -234,26 +261,25 @@ td {
   background-image: linear-gradient(to right, rgba(138, 109, 59, 0), rgba(138, 109, 59, 0.6)); }
 
 /* PHOTOGRAPHIES */
-#main.photos {
-  margin-top: 60px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 90vh; }
-  #main.photos #galerie div a img {
-    border: 2px solid black;
-    width: 100%;
-    height: 50vh;
-    object-fit: cover;
-    opacity: .8;
-    transition: all 1s; }
+#main.photos #galerie div a img {
+  border: 2px solid black;
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  opacity: .8;
+  transition: all 1s; }
+#main.photos ul.pagination li a {
+  font-size: 18px;
+  color: #8A6D3B; }
+#main.photos ul.pagination li.active a {
+  border: 1px solid black;
+  color: white;
+  background-color: #8A6D3B; }
 
 body nav {
   text-align: center; }
 
 /* RESTAURANTS */
-body .restaurants h1 {
-  margin-top: 50px; }
 body .restaurants .resto {
   border: 2px solid white;
   margin-bottom: 1em; }
@@ -278,7 +304,7 @@ body .restaurants .resto {
 
 /* CONTACT */
 #main.contact {
-  min-height: calc(100vh - 50px);
+  min-height: 100%;
   display: flex;
   align-items: center; }
   #main.contact form label {
@@ -366,6 +392,10 @@ body .restaurants .resto {
   body #main.photos {
     display: block; }
     body #main.photos h1 {
-      margin: .5em auto; } }
+      margin: .5em auto; }
+
+  footer span {
+    margin-bottom: 10px;
+    text-align: center; } }
 
 /*# sourceMappingURL=style.css.map */
