@@ -49,9 +49,16 @@
 }
 @media (max-width: 767px)
 {
-	h1, h2
+	h1, h2, p
 	{
 		text-align: center;
+	}
+	blockquote, .restaurants
+	{
+		p
+		{
+			text-align: left;
+		}
 	}
 	.navbar-inverse
 	{
