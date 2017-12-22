@@ -9,26 +9,32 @@ body
 		{
 			padding: 0;
 			display: flex;
-			flex-wrap: wrap;
 			align-items: baseline;
 			span
 			{
-				margin: 0;
 				font-family: 'Cinzel', serif;
-				font-size: 18px;
+				font-size: 16px;
+				opacity: .7;
 			}
-			a
+			span#social
 			{
-				&:last-child
+				text-align: right;
+				width: 100%;
+				a
 				{
-					opacity: .5;
-				}
-				img
-				{
-					animation-duration: .5s;
-  					animation-name: social;
-  					animation-iteration-count: infinite;
-  					animation-direction: alternate;
+					margin-left: 4px;
+					&:last-child
+					{
+						opacity: .5;
+						margin-left: 32px;
+					}
+					img
+					{
+						animation-duration: .5s;
+  						animation-name: social;
+  						animation-iteration-count: infinite;
+  						animation-direction: alternate;
+					}
 				}
 			}
 		}
@@ -48,11 +54,20 @@ body
 	display: block;
 	height: 2px; width: 22px;
 }
-.navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a, .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover
+#navbar
 {
-	background-color: rgba(255, 255, 255, .1);
-	border-left: 1px solid white;
-	border-right: 1px solid white;
+	ul
+	{
+		li.active
+		{
+			a
+			{
+				background-color: rgba(255, 255, 255, .1);
+				border-left: 1px solid white;
+				border-right: 1px solid white;
+			}
+		}
+	}
 }
 .text-right
 {

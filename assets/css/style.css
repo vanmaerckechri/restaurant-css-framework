@@ -115,19 +115,24 @@ td {
 body footer .container {
   padding: 0;
   display: flex;
-  flex-wrap: wrap;
   align-items: baseline; }
   body footer .container span {
-    margin: 0;
     font-family: 'Cinzel', serif;
-    font-size: 18px; }
-  body footer .container a:last-child {
-    opacity: .5; }
-  body footer .container a img {
-    animation-duration: .5s;
-    animation-name: social;
-    animation-iteration-count: infinite;
-    animation-direction: alternate; }
+    font-size: 16px;
+    opacity: .7; }
+  body footer .container span#social {
+    text-align: right;
+    width: 100%; }
+    body footer .container span#social a {
+      margin-left: 4px; }
+      body footer .container span#social a:last-child {
+        opacity: .5;
+        margin-left: 32px; }
+      body footer .container span#social a img {
+        animation-duration: .5s;
+        animation-name: social;
+        animation-iteration-count: infinite;
+        animation-direction: alternate; }
 
 .navbar {
   border-bottom: 2px solid #333333; }
@@ -140,7 +145,7 @@ body footer .container {
   height: 2px;
   width: 22px; }
 
-.navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a, .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
+#navbar ul li.active a {
   background-color: rgba(255, 255, 255, 0.1);
   border-left: 1px solid white;
   border-right: 1px solid white; }
@@ -401,10 +406,11 @@ body .restaurants .resto {
   body #main.photos {
     display: block; }
     body #main.photos h1 {
-      margin: .5em auto; }
-
-  footer span {
-    margin-bottom: 10px;
-    text-align: center; } }
+      margin: .5em auto; } }
+@media (max-width: 360px) {
+  body footer .container span {
+    font-size: 14px; }
+  body footer .container span#social a:last-child {
+    margin-left: 4px; } }
 
 /*# sourceMappingURL=style.css.map */

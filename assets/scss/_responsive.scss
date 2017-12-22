@@ -100,8 +100,32 @@
 	{
 		span
 		{
-			margin-bottom: 10px;
-			text-align: center;
+		}
+	}
+}
+@media (max-width: 360px)
+{
+	body
+	{
+		footer
+		{
+			.container
+			{
+				span
+				{
+					font-size: 14px;
+				}
+				span#social
+				{
+					a
+					{
+						&:last-child
+						{
+							margin-left: 4px;
+						}
+					}
+				}
+			}
 		}
 	}
 }

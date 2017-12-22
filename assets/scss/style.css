@@ -1,28 +1,66 @@
 /* @import "reset"; */
 /* variables */
 /* extend */
+.postite1, .carte .hamburger li:first-child, .carte .hamburger li:nth-child(6), .carte .salades li:nth-child(3), .carte .salades li:nth-child(5) {
+  background-image: linear-gradient(#ffffe1, #ffebd7); }
+
+.postite2, .carte .hamburger li:nth-child(2), .carte .hamburger li:nth-child(5), .carte .salades li:first-child, .carte .salades li:nth-child(6) {
+  background-image: linear-gradient(#ffe1e1, #ebe1e1); }
+
+.postite3, .carte .hamburger li:nth-child(3), .carte .salades li:nth-child(4) {
+  background-image: linear-gradient(#e1ffe1, #ebffeb); }
+
+.postite4, .carte .hamburger li:nth-child(4), .carte .salades li:nth-child(2) {
+  background-image: linear-gradient(#e1e1ff, #ebe1ff); }
+
 .etablissementBg, #main section.jumbotron, #main #concertImg {
   background-size: cover;
   background-attachment: fixed; }
 
-.textCouleurEtOmbres, #main section.jumbotron h1, #main section.jumbotron p, body .restaurants .resto .resto1, body .restaurants .resto .resto2 {
+.textCouleurEtOmbres, #main section.jumbotron h1, #main section.jumbotron p, #main #concertImg blockquote, body .restaurants .resto .resto1, body .restaurants .resto .resto2 {
   color: white;
-  text-shadow: 1px 1px 1px #000014; }
+  text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black; }
 
 /* ANIMATIONS */
+@keyframes social {
+  0% {
+    transform: scale(1, 1);
+    transform-origin: center bottom; }
+  100% {
+    transform: scale(1.1, 0.9);
+    transform-origin: center bottom; } }
 /* variables */
 /* extend */
+.postite1, .carte .hamburger li:first-child, .carte .hamburger li:nth-child(6), .carte .salades li:nth-child(3), .carte .salades li:nth-child(5) {
+  background-image: linear-gradient(#ffffe1, #ffebd7); }
+
+.postite2, .carte .hamburger li:nth-child(2), .carte .hamburger li:nth-child(5), .carte .salades li:first-child, .carte .salades li:nth-child(6) {
+  background-image: linear-gradient(#ffe1e1, #ebe1e1); }
+
+.postite3, .carte .hamburger li:nth-child(3), .carte .salades li:nth-child(4) {
+  background-image: linear-gradient(#e1ffe1, #ebffeb); }
+
+.postite4, .carte .hamburger li:nth-child(4), .carte .salades li:nth-child(2) {
+  background-image: linear-gradient(#e1e1ff, #ebe1ff); }
+
 .etablissementBg, #main section.jumbotron, #main #concertImg {
   background-size: cover;
   background-attachment: fixed; }
 
-.textCouleurEtOmbres, #main section.jumbotron h1, #main section.jumbotron p, body .restaurants .resto .resto1, body .restaurants .resto .resto2 {
+.textCouleurEtOmbres, #main section.jumbotron h1, #main section.jumbotron p, #main #concertImg blockquote, body .restaurants .resto .resto1, body .restaurants .resto .resto2 {
   color: white;
-  text-shadow: 1px 1px 1px #000014; }
+  text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black; }
 
 /* BALISES */
 body {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 100vh;
   background-color: black; }
+
+header {
+  font-size: 18px; }
 
 nav {
   min-height: 50px; }
@@ -31,9 +69,18 @@ nav {
   position: relative;
   margin-top: 50px; }
 
+footer {
+  border-top: 2px solid #333333;
+  padding: 10px 0;
+  background-color: #222222;
+  color: white; }
+
+blockquote {
+  font-size: 24px; }
+
 h1 {
   color: white;
-  margin: 1em 0; }
+  margin: 50px 0; }
 
 h2 {
   margin-top: 0;
@@ -44,66 +91,120 @@ td {
 
 /* variables */
 /* extend */
+.postite1, .carte .hamburger li:first-child, .carte .hamburger li:nth-child(6), .carte .salades li:nth-child(3), .carte .salades li:nth-child(5) {
+  background-image: linear-gradient(#ffffe1, #ffebd7); }
+
+.postite2, .carte .hamburger li:nth-child(2), .carte .hamburger li:nth-child(5), .carte .salades li:first-child, .carte .salades li:nth-child(6) {
+  background-image: linear-gradient(#ffe1e1, #ebe1e1); }
+
+.postite3, .carte .hamburger li:nth-child(3), .carte .salades li:nth-child(4) {
+  background-image: linear-gradient(#e1ffe1, #ebffeb); }
+
+.postite4, .carte .hamburger li:nth-child(4), .carte .salades li:nth-child(2) {
+  background-image: linear-gradient(#e1e1ff, #ebe1ff); }
+
 .etablissementBg, #main section.jumbotron, #main #concertImg {
   background-size: cover;
   background-attachment: fixed; }
 
-.textCouleurEtOmbres, #main section.jumbotron h1, #main section.jumbotron p, body .restaurants .resto .resto1, body .restaurants .resto .resto2 {
+.textCouleurEtOmbres, #main section.jumbotron h1, #main section.jumbotron p, #main #concertImg blockquote, body .restaurants .resto .resto1, body .restaurants .resto .resto2 {
   color: white;
-  text-shadow: 1px 1px 1px #000014; }
+  text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black; }
 
 /* COMMUN */
+body footer .container {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline; }
+  body footer .container span {
+    margin: 0;
+    font-family: 'Cinzel', serif;
+    font-size: 18px; }
+  body footer .container a:last-child {
+    opacity: .5; }
+  body footer .container a img {
+    animation-duration: .5s;
+    animation-name: social;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; }
+
+.navbar {
+  border-bottom: 2px solid #333333; }
+  .navbar ul {
+    margin: 0; }
+
 .navbar-toggle .icon-bar {
   border-radius: 1px;
   display: block;
   height: 2px;
   width: 22px; }
 
+.navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a, .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-left: 1px solid white;
+  border-right: 1px solid white; }
+
+.text-right {
+  text-align: right; }
+
 #main {
   /* ACCUEIL */ }
   #main section.jumbotron {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin-bottom: 0;
     background: url("../images/etablissement.jpg");
-    min-height: calc(100vh - 50px);
+    min-height: 80vh;
     text-align: right; }
+    #main section.jumbotron p {
+      font-size: 24px; }
   #main section#nouveautes {
-    position: absolute;
-    top: calc(100vh - 300px);
+    min-height: 20vh;
+    top: calc(100vh - 200px);
     left: 0;
-    background-color: rgba(0, 0, 0, 0.7); }
+    background-color: black; }
   #main section#concert {
     background-color: black; }
   #main section#nouveautes, #main section#concert {
     margin-bottom: 0;
     border: 1px solid black;
     border-radius: 0;
-    min-height: 250px;
     width: 100%;
     box-shadow: 1px 1px 5px #0a0028; }
     #main section#nouveautes .panel-heading, #main section#concert .panel-heading {
       border: none; }
     #main section#nouveautes .panel-body p, #main section#concert .panel-body p {
       color: white;
-      line-height: 2em; }
+      line-height: 2em;
+      font-size: 18px; }
   #main #concertImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: url("../images/concert.jpg");
     min-height: 100vh; }
 
 /* CARTE */
-.carte h1 {
-  margin-top: 2em; }
-.carte .panel-heading {
-  padding-top: 0;
-  padding-bottom: 0;
-  text-align: right; }
-.carte .hamburger {
+.carte section {
+  border: none;
+  background-color: black;
+  margin-bottom: 50px; }
+.carte p.panel-body {
+  margin-top: 10px;
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  font-family: 'Indie Flower', cursive; }
+.carte .plats {
   border-top: 2px solid #282832;
   border-right: 2px solid #282832;
   border-left: 2px solid #282832;
   border-bottom: 2px solid black;
-  padding: 15px;
+  padding: 12px;
   background-color: #1e1e28; }
-  .carte .hamburger ul {
+  .carte .plats ul {
     margin: 0;
     border-top: 2px solid black;
     border-right: 2px solid black;
@@ -114,7 +215,7 @@ td {
     flex-wrap: wrap;
     text-align: center;
     background-color: #1e1e28; }
-    .carte .hamburger ul li {
+    .carte .plats ul li {
       margin-top: 20px;
       display: inline-block;
       width: 250px;
@@ -123,30 +224,38 @@ td {
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
-      box-shadow: 3px 3px 6px rgba(0, 0, 10, 0.9); }
-      .carte .hamburger ul li:first-child {
-        background-color: #ffffc8;
-        transform: rotate(5deg); }
-      .carte .hamburger ul li:nth-child(2) {
-        background-color: #ffc8c8;
-        transform: rotate(-10deg); }
-      .carte .hamburger ul li:nth-child(3) {
-        background-color: #c8ffc8;
-        transform: rotate(-2deg); }
-      .carte .hamburger ul li:nth-child(4) {
-        background-color: #c8ffc8;
-        transform: rotate(3deg); }
-      .carte .hamburger ul li:nth-child(5) {
-        background-color: #ffffc8;
-        transform: rotate(-5deg); }
-      .carte .hamburger ul li:nth-child(6) {
-        background-color: #ffc8c8;
-        transform: rotate(7deg); }
-      .carte .hamburger ul li h3 {
-        font-size: 1.5em; }
-      .carte .hamburger ul li .badge {
-        font-size: 1.5em;
+      box-shadow: 3px 3px 6px 3px rgba(0, 0, 10, 0.9); }
+      .carte .plats ul li p {
+        font-size: 18px; }
+      .carte .plats ul li h3 {
+        font-size: 30px; }
+      .carte .plats ul li .badge {
+        font-size: 24px;
         background-color: black; }
+.carte .hamburger li:first-child {
+  transform: rotate(5deg); }
+.carte .hamburger li:nth-child(2) {
+  transform: rotate(-10deg); }
+.carte .hamburger li:nth-child(3) {
+  transform: rotate(-2deg); }
+.carte .hamburger li:nth-child(4) {
+  transform: rotate(3deg); }
+.carte .hamburger li:nth-child(5) {
+  transform: rotate(-5deg); }
+.carte .hamburger li:nth-child(6) {
+  transform: rotate(7deg); }
+.carte .salades li:first-child {
+  transform: rotate(-3deg); }
+.carte .salades li:nth-child(2) {
+  transform: rotate(5deg); }
+.carte .salades li:nth-child(3) {
+  transform: rotate(-2deg); }
+.carte .salades li:nth-child(4) {
+  transform: rotate(4deg); }
+.carte .salades li:nth-child(5) {
+  transform: rotate(-3deg); }
+.carte .salades li:nth-child(6) {
+  transform: rotate(5deg); }
 
 .carteTitre {
   font-weight: 600;
@@ -159,31 +268,33 @@ td {
   background-image: linear-gradient(to right, rgba(138, 109, 59, 0), rgba(138, 109, 59, 0.6)); }
 
 /* PHOTOGRAPHIES */
-#main.photos {
-  margin-top: 60px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 90vh; }
-  #main.photos #galerie div a img {
-    border: 2px solid black;
-    width: 100%;
-    height: 50vh;
-    object-fit: cover;
-    opacity: .8;
-    transition: all 1s; }
+#main.photos #galerie div a img {
+  border: 2px solid black;
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  opacity: .8;
+  transition: all 1s; }
+#main.photos ul.pagination li a {
+  font-size: 18px;
+  color: #8A6D3B; }
+#main.photos ul.pagination li.active a {
+  border: 1px solid black;
+  color: white;
+  background-color: #8A6D3B; }
 
 body nav {
   text-align: center; }
 
 /* RESTAURANTS */
-body .restaurants h1 {
-  margin-top: 50px;
-  background-color: black; }
 body .restaurants .resto {
   border: 2px solid white;
   margin-bottom: 1em; }
+  body .restaurants .resto h2 {
+    margin: 25px 0; }
   body .restaurants .resto .resto1, body .restaurants .resto .resto2 {
+    box-shadow: inset 0 0 0 211px rgba(0, 0, 0, 0.5);
+    font-size: 18px;
     height: 422px; }
   body .restaurants .resto .resto1 {
     background: url("../images/restaurant1.jpg") no-repeat;
@@ -200,7 +311,7 @@ body .restaurants .resto {
 
 /* CONTACT */
 #main.contact {
-  min-height: calc(100vh - 50px);
+  min-height: 100%;
   display: flex;
   align-items: center; }
   #main.contact form label {
@@ -209,15 +320,37 @@ body .restaurants .resto {
   #main.contact form textarea {
     max-width: 100%; }
 
+/* OFFLINE */
+.offline {
+  margin-bottom: 2em;
+  padding-bottom: 2em;
+  background-color: black;
+  color: white;
+  text-align: center; }
+  .offline div:nth-child(2) h2 {
+    margin-top: 2em; }
+
 /* variables */
 /* extend */
+.postite1, .carte .hamburger li:first-child, .carte .hamburger li:nth-child(6), .carte .salades li:nth-child(3), .carte .salades li:nth-child(5) {
+  background-image: linear-gradient(#ffffe1, #ffebd7); }
+
+.postite2, .carte .hamburger li:nth-child(2), .carte .hamburger li:nth-child(5), .carte .salades li:first-child, .carte .salades li:nth-child(6) {
+  background-image: linear-gradient(#ffe1e1, #ebe1e1); }
+
+.postite3, .carte .hamburger li:nth-child(3), .carte .salades li:nth-child(4) {
+  background-image: linear-gradient(#e1ffe1, #ebffeb); }
+
+.postite4, .carte .hamburger li:nth-child(4), .carte .salades li:nth-child(2) {
+  background-image: linear-gradient(#e1e1ff, #ebe1ff); }
+
 .etablissementBg, #main section.jumbotron, #main #concertImg {
   background-size: cover;
   background-attachment: fixed; }
 
-.textCouleurEtOmbres, #main section.jumbotron h1, #main section.jumbotron p, body .restaurants .resto .resto1, body .restaurants .resto .resto2 {
+.textCouleurEtOmbres, #main section.jumbotron h1, #main section.jumbotron p, #main #concertImg blockquote, body .restaurants .resto .resto1, body .restaurants .resto .resto2 {
   color: white;
-  text-shadow: 1px 1px 1px #000014; }
+  text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black; }
 
 /* RESPONSIVE */
 @media (min-width: 768px) {
@@ -226,7 +359,7 @@ body .restaurants .resto {
     border-radius: 10px;
     padding: 15px 5px 60px;
     background-color: white; }
-    #main.photos #galerie div a img:hover {
+    #main.photos #galerie div:hover a img {
       border: 1px solid white;
       transform: scale(1.2);
       border-radius: 10px;
@@ -247,10 +380,18 @@ body .restaurants .resto {
       background: none;
       z-index: 1000; } }
 @media (max-width: 767px) {
+  h1, h2, p {
+    text-align: center; }
+
+  blockquote p, .restaurants p {
+    text-align: left; }
+
   .navbar-inverse ul.navbar-nav li {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.5);
     border-bottom: 1px solid white; }
+    .navbar-inverse ul.navbar-nav li:first-child {
+      border-top: 1px solid white; }
     .navbar-inverse ul.navbar-nav li a {
       color: white; }
       .navbar-inverse ul.navbar-nav li a:hover {
@@ -260,6 +401,10 @@ body .restaurants .resto {
   body #main.photos {
     display: block; }
     body #main.photos h1 {
-      margin: .5em auto; } }
+      margin: .5em auto; }
+
+  footer span {
+    margin-bottom: 10px;
+    text-align: center; } }
 
 /*# sourceMappingURL=style.css.map */
