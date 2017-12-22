@@ -1,4 +1,4 @@
-# FRAMEWORK - CSS - RESTAURANT FICTIF - (en dev.)
+# FRAMEWORK - CSS - RESTAURANT FICTIF - (v1.0)
 
 ## Les Consignes
 
@@ -10,7 +10,7 @@
 
 ## Contexte
 
-Découverte de bootstrap pour se familiariser avec les frameworks.
+Durant la formation BeCode, découverte de bootstrap pour se familiariser avec les frameworks.
 
 ## Sources
 
