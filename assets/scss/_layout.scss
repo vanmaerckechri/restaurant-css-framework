@@ -420,16 +420,10 @@ body
 
 .offline
 {
-	margin-bottom: 2em;
-	padding-bottom: 2em;
-	background-color: black;
 	color: white;
 	text-align: center;
-	div:nth-child(2)
+	h2
 	{
-		h2
-		{
-			margin-top: 2em;
-		}
+		margin-top: 20px;
 	}
 }

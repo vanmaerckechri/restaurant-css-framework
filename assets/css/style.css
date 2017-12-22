@@ -327,13 +327,10 @@ body .restaurants .resto {
 
 /* OFFLINE */
 .offline {
-  margin-bottom: 2em;
-  padding-bottom: 2em;
-  background-color: black;
   color: white;
   text-align: center; }
-  .offline div:nth-child(2) h2 {
-    margin-top: 2em; }
+  .offline h2 {
+    margin-top: 20px; }
 
 /* variables */
 /* extend */
