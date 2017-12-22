@@ -10,7 +10,7 @@
 
 ## Contexte
 
-Durant la formation BeCode, découverte de bootstrap pour se familiariser avec les frameworks.
+Durant la formation [Becode](http://www.becode.org/), découverte de bootstrap pour se familiariser avec les frameworks.
 
 ## Sources
 
