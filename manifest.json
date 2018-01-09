@@ -1,6 +1,8 @@
 {
     "name": "Restaurant du Gras Plein la Panse",
     "short_name" : "Resto DGPP",
+    "start_url": "index.html?utm_source=homescreen",
+    "scope" : "./",
     "icons": [
         {
             "src": "android-chrome-192x192.png",
