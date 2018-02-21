@@ -19,7 +19,7 @@
 
 .textCouleurEtOmbres, #main section.jumbotron h1, #main section.jumbotron p, #main #concertImg blockquote, body .restaurants .resto .resto1, body .restaurants .resto .resto2 {
   color: white;
-  text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black; }
+  text-shadow: 1px 0 1px black, -1px 0 1px black, 0 -1px 1px black, 0 1px 1px black, 1px 0 1px black, -1px 0 1px black, 0 -1px 1px black, 0 1px 1px black, 1px 0 1px black, -1px 0 1px black, 0 -1px 1px black, 0 1px 1px black; }
 
 /* ANIMATIONS */
 @keyframes social {
@@ -49,7 +49,7 @@
 
 .textCouleurEtOmbres, #main section.jumbotron h1, #main section.jumbotron p, #main #concertImg blockquote, body .restaurants .resto .resto1, body .restaurants .resto .resto2 {
   color: white;
-  text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black; }
+  text-shadow: 1px 0 1px black, -1px 0 1px black, 0 -1px 1px black, 0 1px 1px black, 1px 0 1px black, -1px 0 1px black, 0 -1px 1px black, 0 1px 1px black, 1px 0 1px black, -1px 0 1px black, 0 -1px 1px black, 0 1px 1px black; }
 
 /* BALISES */
 body {
@@ -79,7 +79,7 @@ blockquote {
   font-size: 24px; }
 
 h1 {
-  color: white;
+  color: black;
   margin: 50px 0; }
 
 h2 {
@@ -109,7 +109,7 @@ td {
 
 .textCouleurEtOmbres, #main section.jumbotron h1, #main section.jumbotron p, #main #concertImg blockquote, body .restaurants .resto .resto1, body .restaurants .resto .resto2 {
   color: white;
-  text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black; }
+  text-shadow: 1px 0 1px black, -1px 0 1px black, 0 -1px 1px black, 0 1px 1px black, 1px 0 1px black, -1px 0 1px black, 0 -1px 1px black, 0 1px 1px black, 1px 0 1px black, -1px 0 1px black, 0 -1px 1px black, 0 1px 1px black; }
 
 /* COMMUN */
 body footer .container {
@@ -352,7 +352,7 @@ body .restaurants .resto {
 
 .textCouleurEtOmbres, #main section.jumbotron h1, #main section.jumbotron p, #main #concertImg blockquote, body .restaurants .resto .resto1, body .restaurants .resto .resto2 {
   color: white;
-  text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black; }
+  text-shadow: 1px 0 1px black, -1px 0 1px black, 0 -1px 1px black, 0 1px 1px black, 1px 0 1px black, -1px 0 1px black, 0 -1px 1px black, 0 1px 1px black, 1px 0 1px black, -1px 0 1px black, 0 -1px 1px black, 0 1px 1px black; }
 
 /* RESPONSIVE */
 @media (min-width: 768px) {
